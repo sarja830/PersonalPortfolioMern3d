@@ -10,13 +10,13 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 
 const ResearchCard = ({
-                         index,
-                         name,
-                         description,
-                         tags,
-                         image,
-                         source_code_link,
-                     }) => {
+                          index,
+                          name,
+                          description,
+                          tags,
+                          image,
+                          source_code_link,
+                      }) => {
     return (
         <motion.div
             variants={fadeIn("down", "spring", index * 0.5, 0.75)}>
@@ -26,15 +26,17 @@ const ResearchCard = ({
                     scale: 1,
                     speed: 450,
                 }}
-                className='bg-tertiary p-5 rounded-2xl flex hover:flex-1 w-full h-full'
-            >
-                <div className='relative w-full h-[230px]'>
+                // className='bg-tertiary p-5 rounded-2xl flex hover:flex-1 w-full h-full'
+
+                className='flex flex-col grid-row bg-tertiary border border-gray-200 rounded-lg  md:flex-row md:max-w-7xl hover:flex-1 p-5 rounded-2xl'>
+                <div className='relative w-full '>
                     <div
                         onClick={() => window.open(source_code_link, "_blank")}
                         className='w-full h-full object-cover  cursor-pointer rounded-2xl'
                     >
                         <img
                             src={image}
+
                             alt='project_image'
                             className='w-full h-full object-cover rounded-2xl'
                         />
@@ -67,12 +69,15 @@ const ResearchCard = ({
                         </div>
                     </div>
                 </div>
-                {/*for name and desdcriptions*/}
-                <div className='mt-5'>
-                    <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+                {/*<img*/}
+                {/*    className='object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg'*/}
+                {/*    src={image}*/}
+                {/*    alt='project_image'/>*/}
+                <div className='flex flex-col justify-between p-4 leading-normal'>
+                    <h3 className='text-white font-bold text-[24px]'>
+                        {name}</h3>
                     <p className='mt-2 text-secondary text-[14px]'>{description}</p>
                 </div>
-                {/*for hashtags*/}
                 <div className='mt-4 flex flex-wrap gap-2'>
                     {tags.map((tag) => (
                         <p

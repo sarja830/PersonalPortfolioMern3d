@@ -318,9 +318,9 @@ const projects = [
     },
 ];
 const journals =[{
-    name: "Trip Guide",
+    name: "Assessment and Prediction of PM2.5 in Delhi in View of Stubble Burn from Border States Using Collaborative Learning Model",
     description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Harvest scum burning in post-monsoon season in the nearby states increases air pollution levels. A thick layer of smog blankets can be seen in Delhi, India in November, the primary season of stubble burning. PM2.5 can play a major role in analyzing the stubble burning, as it has a better living time in the air. Numerous machine-learning techniques have been adopted to forecast the air quality, but none of them focuses primarily on the issues of stubble burning and its effect on Delhi’s air. In this paper, the author attempts to estimate the value of PM2.5 in Delhi, mainly due to stubble burning in neighboring states. For this, the PM2.5, PM10, NO2, CO, and SO2 data is taken into consideration for 9 ground-based continuous air quality monitoring stations in the neighboring states of Delhi for the duration of 6 months and 15 days in the calendar year of 2019. Subsequently various meteorological parameters are considered like wind speed, temperature, and relative humidity. The model used here is based on collaborative learning (stacking regression) which is trained using the out-of-folds predictions based on the complete training set, later the meta-regression is trained based on the outputs of the different regression methods in the group. The presented model is validated using different machine-learning methods, statistical measures, and the real-time stubble data of Delhi. The results show that the proposed method performs well when compared with previous methods.",
     tags: [
         {
             name: "nextjs",
