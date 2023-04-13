@@ -31,13 +31,36 @@ export const navLinks = [
         title: "About",
     },
     {
-        id: "work",
-        title: "Work",
+        id: "experience",
+        title: "Experience",
+    },
+    {
+        id: "skills",
+        title: "Skills",
+    },
+    {
+        id: "projects",
+        title: "Projects",
+    },
+    {
+        id: "research",
+        title: "Research",
+    },
+    {
+        id: "testimonials",
+        title: "Testimonials",
     },
     {
         id: "contact",
         title: "Contact",
     },
+
+    {
+        id: "resume",
+        title: "Resume",
+    },
+
+
 ];
 
 const services = [
@@ -294,5 +317,18 @@ const projects = [
         source_code_link: "https://github.com/",
     },
 ];
+const journals =[{
+    name: "Trip Guide",
+    description:
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+        {
+            name: "nextjs",
+            color: "blue-text-gradient",
+        }
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/",
+}]
 
-export { name ,services, technologies, experiences, testimonials, projects };
+export { name ,services, technologies, experiences, testimonials,journals, projects };

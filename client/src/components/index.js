@@ -4,9 +4,10 @@ import Navbar from './Navbar.jsx';
 import About from './About.jsx';
 import Tech from './Tech.jsx';
 import Experience from './Experience.jsx';
-import Works from './Works.jsx';
+import Projects from './Projects.jsx';
 import Feedbacks from './Feedbacks.jsx';
 import Contact from './Contact.jsx';
+import Research from './Research.jsx';
 
 
 
@@ -16,8 +17,8 @@ export {
   About,
   Tech,
   Experience,
-  Works,
-
+  Projects,
+  Research,
   Feedbacks,
   Contact,
   EarthCanvas,
