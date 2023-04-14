@@ -3,7 +3,8 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+// import { github } from "../assets";
+import { springer } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { journals } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -28,8 +29,10 @@ const ResearchCard = ({
                 }}
                 // className='bg-tertiary p-5 rounded-2xl flex hover:flex-1 w-full h-full'
 
-                className='flex flex-col grid-row bg-tertiary border border-gray-200 rounded-lg  md:flex-row md:max-w-7xl hover:flex-1 p-5 rounded-2xl'>
-                <div className='relative w-full '>
+                className='flex flex-col items-center bg-tertiary border border-gray-200 rounded-lg  md:flex-row md:max-w-7xl hover:flex-1 p-5 rounded-2xl'>
+                <div role="status"
+                     className="relative space-y-8 animate-pulse md:space-y-0 md:space-x-8 md:flex md:items-center">
+                {/*<div className='relative w-full h-[460px] '>*/}
                     <div
                         onClick={() => window.open(source_code_link, "_blank")}
                         className='w-full h-full object-cover  cursor-pointer rounded-2xl'
@@ -58,11 +61,11 @@ const ResearchCard = ({
                         <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
                             <div
                                 onClick={() => window.open(source_code_link, "_blank")}
-                                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                                className='black-gradient w-16 h-16 rounded-full flex justify-center items-center cursor-pointer'
                             >
                                 <img
-                                    src={github}
-                                    alt='source code'
+                                    src={springer}
+                                    alt='paper link'
                                     className='w-1/2 h-1/2 object-contain'
                                 />
                             </div>
@@ -77,17 +80,18 @@ const ResearchCard = ({
                     <h3 className='text-white font-bold text-[24px]'>
                         {name}</h3>
                     <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+                    <div className='mt-4 flex flex-none gap-2'>
+                        {tags.map((tag) => (
+                            <p
+                                key={`${name}-${tag.name}`}
+                                className={`text-[14px] ${tag.color}`}
+                            >
+                                #{tag.name}
+                            </p>
+                        ))}
+                    </div>
                 </div>
-                <div className='mt-4 flex flex-wrap gap-2'>
-                    {tags.map((tag) => (
-                        <p
-                            key={`${name}-${tag.name}`}
-                            className={`text-[14px] ${tag.color}`}
-                        >
-                            #{tag.name}
-                        </p>
-                    ))}
-                </div>
+
             </Tilt>
         </motion.div>
     );

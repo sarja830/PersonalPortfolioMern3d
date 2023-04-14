@@ -22,6 +22,7 @@ import {
     carrent,
     jobit,
     tripguide,
+    journal,
     threejs,
 } from "../assets";
 
@@ -142,8 +143,8 @@ const technologies = [
 
 const experiences = [
     {
-        university: "University At Buffalo",
-        degree: "Master's in Computer Science & Engineer",
+        title: "University At Buffalo",
+        company_name: "Master's in Computer Science & Engineer",
         icon: starbucks,
         iconBg: "#383E56",
         date: "August 2022 - Present",
@@ -153,10 +154,11 @@ const experiences = [
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
+        link:"https://paytm.com/"
     },
     {
-        university: "University At Buffalo",
-        degree: "Master's in Computer Science & Engineer",
+        title: "Paytm",
+        company_name: "Software Development Engineer",
         icon: starbucks,
         iconBg: "#383E56",
         date: "August 2022 - Present",
@@ -166,10 +168,12 @@ const experiences = [
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
+        link:"https://paytm.com/"
     },
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
+        title: "Paytm Mall",
+        company_name: "Software Developer intern",
+
         icon: starbucks,
         iconBg: "#383E56",
         date: "March 2020 - April 2021",
@@ -179,9 +183,10 @@ const experiences = [
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
+        link:"https://paytm.com/"
     },
     {
-        title: "React Native Developer",
+        title: "Ramaiah Institute of Technology, VTU",
         company_name: "Tesla",
         icon: tesla,
         iconBg: "#E6DEDD",
@@ -320,15 +325,27 @@ const projects = [
 const journals =[{
     name: "Assessment and Prediction of PM2.5 in Delhi in View of Stubble Burn from Border States Using Collaborative Learning Model",
     description:
-        "Harvest scum burning in post-monsoon season in the nearby states increases air pollution levels. A thick layer of smog blankets can be seen in Delhi, India in November, the primary season of stubble burning. PM2.5 can play a major role in analyzing the stubble burning, as it has a better living time in the air. Numerous machine-learning techniques have been adopted to forecast the air quality, but none of them focuses primarily on the issues of stubble burning and its effect on Delhi’s air. In this paper, the author attempts to estimate the value of PM2.5 in Delhi, mainly due to stubble burning in neighboring states. For this, the PM2.5, PM10, NO2, CO, and SO2 data is taken into consideration for 9 ground-based continuous air quality monitoring stations in the neighboring states of Delhi for the duration of 6 months and 15 days in the calendar year of 2019. Subsequently various meteorological parameters are considered like wind speed, temperature, and relative humidity. The model used here is based on collaborative learning (stacking regression) which is trained using the out-of-folds predictions based on the complete training set, later the meta-regression is trained based on the outputs of the different regression methods in the group. The presented model is validated using different machine-learning methods, statistical measures, and the real-time stubble data of Delhi. The results show that the proposed method performs well when compared with previous methods.",
+        "A thick layer of smog blankets can be seen in Delhi," +
+        " India in November, the primary season of stubble burning. " +
+        " In this paper, the author attempts to estimate the value of PM2.5 in Delhi," +
+        " mainly due to stubble burning in neighboring states. " +
+        "Various meteorological parameters are considered like wind speed, temperature, and relative humidity. The model used here is based on collaborative learning (stacking regression) which is trained using the out-of-folds predictions based on the complete training set, later the meta-regression is trained based on the outputs of the different regression methods in the group. The presented model is validated using different machine-learning methods, statistical measures, and the real-time stubble data of Delhi. ",
     tags: [
         {
-            name: "nextjs",
+            name: "Journal",
             color: "blue-text-gradient",
+        },
+        {
+            name: "Springer",
+            color: "orange-text-gradient",
+        },
+        {
+            name: "Aerosol Science and Engineering",
+            color: "green-text-gradient",
         }
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: journal,
+    source_code_link: "https://link.springer.com/article/10.1007/s41810-020-00083-1",
 }]
 
 export { name ,services, technologies, experiences, testimonials,journals, projects };
