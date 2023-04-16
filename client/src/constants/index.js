@@ -19,11 +19,13 @@ import {
     starbucks,
     tesla,
     shopify,
+    paytm,
     carrent,
     jobit,
     tripguide,
     journal,
     threejs,
+    paytmmall,
 } from "../assets";
 
 export const navLinks = [ 
@@ -70,7 +72,7 @@ const services = [
         icon: web,
     },
     {
-        title: "React Native Developer",
+        title: "Machine Learning Enthusiast",
         icon: mobile,
     },
     {
@@ -145,8 +147,8 @@ const experiences = [
     {
         title: "University At Buffalo",
         company_name: "Master's in Computer Science & Engineer",
-        icon: starbucks,
-        iconBg: "#383E56",
+        icon: tesla,
+        iconBg: "white",
         date: "August 2022 - Present",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
@@ -154,14 +156,14 @@ const experiences = [
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
-        link:"https://paytm.com/"
+        link:"https://www.buffalo.edu/"
     },
     {
         title: "Paytm",
         company_name: "Software Development Engineer",
-        icon: starbucks,
-        iconBg: "#383E56",
-        date: "August 2022 - Present",
+        icon: paytm,
+        iconBg: "white",
+        date: "June 2021 - Aug 2022",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -174,56 +176,31 @@ const experiences = [
         title: "Paytm Mall",
         company_name: "Software Developer intern",
 
-        icon: starbucks,
-        iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        icon: paytmmall,
+        iconBg: "white",
+        date: "January 2021 - June 2021",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
-        link:"https://paytm.com/"
+        link:"https://paytmmall.com/"
     },
     {
         title: "Ramaiah Institute of Technology, VTU",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        company_name: "Bachelor of Engineering in Information Science and Engineering",
+        icon: starbucks,
+        iconBg: "white",
+        date: "June 2017 - July 2021",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+        link:"https://www.msrit.edu/"
+    }
 ];
 
 const testimonials = [

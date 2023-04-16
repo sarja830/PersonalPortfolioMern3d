@@ -8,6 +8,7 @@ import Projects from './Projects.jsx';
 import Feedbacks from './Feedbacks.jsx';
 import Contact from './Contact.jsx';
 import Research from './Research.jsx';
+import Footer from './Footer.jsx';
 
 
 
@@ -25,4 +26,5 @@ export {
   BallCanvas,
   ComputersCanvas,
   StarsCanvas,
+    Footer
 }
