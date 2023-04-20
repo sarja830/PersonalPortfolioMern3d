@@ -64,7 +64,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-{/* for mobile device menu bar the toogle is set to meu icon once pressed it changes to close icon */}
+{/* for mobile device menu bar the toogle is set to menu icon once pressed it changes to close icon */}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}

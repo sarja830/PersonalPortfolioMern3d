@@ -26,9 +26,21 @@ import {
     journal,
     threejs,
     paytmmall,
-} from "../assets";
+    spark,
+    hadoop,
+    kafka,
+    intellij,
+    vscode,
+    c,
+    java,
+    python,
+    jenkins, postgres, rabbitmq, springboot,
+    theindiancraftstore
 
-export const navLinks = [ 
+} from "../assets";
+import {faJenkins} from "@fortawesome/free-brands-svg-icons";
+
+export const navLinks = [
     {
         id: "about",
         title: "About",
@@ -80,68 +92,114 @@ const services = [
         icon: backend,
     },
     {
-        title: "Content Creator",
+        title: "Software Engineer",
         icon: creator,
     },
 ];
 
-const technologies = [
+const languages = [
     {
-        name: "HTML 5",
-        icon: html,
+        name: "Java",
+        icon: java,
     },
     {
-        name: "CSS 3",
-        icon: css,
+        name: "Python",
+        icon: python,
     },
     {
-        name: "JavaScript",
+        name: "Javascript",
         icon: javascript,
     },
     {
-        name: "TypeScript",
+        name: "Typescript",
         icon: typescript,
     },
     {
-        name: "React JS",
-        icon: reactjs,
+        name: "Css",
+        icon: css,
     },
     {
-        name: "Redux Toolkit",
-        icon: redux,
+        name: "C",
+        icon: c,
     },
     {
-        name: "Tailwind CSS",
-        icon: tailwind,
-    },
+        name: "Bash",
+        icon: html,
+    }
+];
+
+const others = [
+
     {
-        name: "Node JS",
-        icon: nodejs,
+        name: "Git",
+        icon: git,
     },
     {
         name: "MongoDB",
         icon: mongodb,
     },
     {
-        name: "Three JS",
-        icon: threejs,
+        name: "PostgreSQL",
+        icon: postgres,
     },
     {
-        name: "git",
-        icon: git,
-    },
-    {
-        name: "figma",
-        icon: figma,
-    },
-    {
-        name: "docker",
+        name: "Docker",
         icon: docker,
     },
+    {
+        name: "Heroku",
+        icon: html,
+    },
+    {
+        name: "Jenkins",
+        icon: jenkins,
+    },
+    {
+        name: "Kafka",
+        icon: kafka,
+    },
+    {
+        name: "RabbitMq",
+        icon: rabbitmq,
+    },
+    {
+        name: "Intellij",
+        icon: intellij,
+    },
+    {
+        name: "VS Code",
+        icon: vscode,
+    },
+
+
+];
+
+const frameworks = [
+    {
+        name: "React",
+        icon: reactjs,
+    },
+    {
+        name: "Node.js",
+        icon: nodejs,
+    },
+    {
+        name: "Spring Boot",
+        icon: springboot,
+    },
+    {
+        name: "Apache Spark",
+        icon: spark,
+    },{
+        name: "Apache Hadoop",
+        icon: hadoop,
+    },
+
+
 ];
 
 
-    
+
 
 const experiences = [
     {
@@ -151,10 +209,7 @@ const experiences = [
         iconBg: "white",
         date: "August 2022 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Transcript  "
         ],
         link:"https://www.buffalo.edu/"
     },
@@ -165,10 +220,11 @@ const experiences = [
         iconBg: "white",
         date: "June 2021 - Aug 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            " Rewriting the existing PHP code base in Spring Boot and Node.Js for making the system more robust and scalable for Paytm loan collection and automation platform",
+            "Designed and developed asynchronous APIs for bulk managing of products by the sellers of Paytm ecommerce mall",
+            "Automated CI/CD pipelines to deploy Docker Image to Kubernetes Cluster" ,
+            "Implemented a logging framework for improved error handling and code debugging as part of code hygiene project"
+
         ],
         link:"https://paytm.com/"
     },
@@ -180,10 +236,7 @@ const experiences = [
         iconBg: "white",
         date: "January 2021 - June 2021",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Responsible for creating backend APIs for upcoming automated notification features in Paytm ecommerce mall"
         ],
         link:"https://paytmmall.com/"
     },
@@ -194,10 +247,7 @@ const experiences = [
         iconBg: "white",
         date: "June 2017 - July 2021",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Transcript"
         ],
         link:"https://www.msrit.edu/"
     }
@@ -209,7 +259,7 @@ const testimonials = [
             "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
         name: "Sara Lee",
         designation: "CFO",
-        company: "Acme Co",
+        company: "Paytm",
         image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
@@ -229,16 +279,20 @@ const testimonials = [
         image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
 ];
-const name = {name: "Sarthak",
-descriptionLine1: "hello I am there",
-descriptionLine2: "in developing stage"
+const name = {
+    name: ["Sarthak"],
+    descriptionLine1: "",
+    descriptionLine2: ""
 
 }
+const qualities =
+    ["Avid Learner","Enthusiastic","Techie"]
+
 const projects = [
     {
-        name: "Car Rent",
+        name: "The Indian Craft Store",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "\"The Indian Craft Store\" is an efficient and user-friendly platform that connects buyers and sellers of handmade art and craft products, promoting and supporting India's rich cultural heritage.",
         tags: [
             {
                 name: "react",
@@ -249,11 +303,11 @@ const projects = [
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "React-bootstrap",
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
+        image: theindiancraftstore,
         source_code_link: "https://github.com/",
     },
     {
@@ -325,4 +379,4 @@ const journals =[{
     source_code_link: "https://link.springer.com/article/10.1007/s41810-020-00083-1",
 }]
 
-export { name ,services, technologies, experiences, testimonials,journals, projects };
+export { name ,services, frameworks,others,languages, experiences, testimonials,journals,qualities, projects };

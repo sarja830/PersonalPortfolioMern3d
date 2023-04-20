@@ -11,16 +11,32 @@ import close from "./close.svg";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
-import git from "./tech/git.png";
+
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
+
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import hadoop from "./tech/hadoop.svg";
+import spark from "./tech/spark.svg";
+import git from "./tech/git.svg";
+import intellij from "./tech/intellij.svg";
+import vscode from "./tech/vscode.svg";
+import jenkins from "./tech/jenkins.svg";
+import java from "./tech/java.svg";
+import c from "./tech/c.png";
+import python from "./tech/python.svg";
+import kafka from "./tech/kafka.svg";
+import postgres from "./tech/postgres.svg";
+import rabbitmq from "./tech/rabbitmq.svg";
+import springboot from "./tech/springboot.svg";
+import mongodb from "./tech/mongodb.png";
+
+
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -29,9 +45,12 @@ import tesla from "./company/tesla.png";
 import paytm from "./company/paytm.png";
 import paytmmall from "./company/paytmmall.png";
 
+import resume from "./SarthakJain-Resume.pdf"
+
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import theindiancraftstore from "./theindiancraftstore.png";
 import journal from "./journal3.png";
 
 
@@ -67,5 +86,19 @@ export {
     springer,
     journal,
     paytm,
-  paytmmall
+  paytmmall,
+    kafka,
+    springboot,
+    c,
+    java,
+    python,
+    intellij,
+    vscode,
+    jenkins,
+    rabbitmq,
+    hadoop,
+    spark,
+  postgres,
+  theindiancraftstore,
+    resume
 };

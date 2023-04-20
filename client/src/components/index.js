@@ -2,12 +2,14 @@ import { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas } from './canvas/
 import Hero from './Hero.jsx';
 import Navbar from './Navbar.jsx';
 import About from './About.jsx';
-import Tech from './Tech.jsx';
+import Resume from './Resume.jsx';
+
 import Experience from './Experience.jsx';
 import Projects from './Projects.jsx';
 import Feedbacks from './Feedbacks.jsx';
 import Contact from './Contact.jsx';
 import Research from './Research.jsx';
+import Skills from './Skills.jsx';
 import Footer from './Footer.jsx';
 
 
@@ -16,7 +18,7 @@ export {
   Hero,
   Navbar,
   About,
-  Tech,
+
   Experience,
   Projects,
   Research,
@@ -26,5 +28,7 @@ export {
   BallCanvas,
   ComputersCanvas,
   StarsCanvas,
-    Footer
+    Footer,
+    Skills,
+    Resume
 }

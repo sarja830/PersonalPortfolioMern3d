@@ -2,7 +2,12 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import {name} from '../constants/index'
+import {qualities} from '../constants/index'
+
+import React from "react";
+import Typed from "react-typed";
 const Hero = () => {
+
   return (
     <div className={`relative w-full h-screen mx-auto`}>
       <div
@@ -16,10 +21,28 @@ const Hero = () => {
 {/* this is the div for text */}
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>{name.name}</span>
+            Hi, I'm &nbsp;
+            <Typed
+
+                strings={name.name}
+                typeSpeed={120}
+                className=" text-[#915EFF]"
+                cursorChar=" "
+            />
+
+            {/*<span className='text-[#915EFF]'>{name.name}</span>*/}
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            {name.descriptionLine1} <br className='sm:block hidden' />
+          <p className={`${styles.heroSubText} mt-12 text-white-500`}>
+            <Typed
+
+                strings={qualities}
+                typeSpeed={120}
+                className={`${styles.heroHeadText} text-[#F13C20] font-bold`}
+                cursorChar=" "
+                loop={0}
+            />
+
+      <br className='sm:block hidden' />
             {name.descriptionLine2}
           </p>
         </div>
