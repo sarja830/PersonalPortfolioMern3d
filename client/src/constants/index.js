@@ -35,7 +35,8 @@ import {
     java,
     python,
     jenkins, postgres, rabbitmq, springboot,
-    theindiancraftstore
+    theindiancraftstore,
+
 
 } from "../assets";
 import {faJenkins} from "@fortawesome/free-brands-svg-icons";
@@ -66,17 +67,19 @@ export const navLinks = [
         title: "Testimonials",
     },
     {
+        id: "resume",
+        title: "Resume",
+    },
+    {
         id: "contact",
         title: "Contact",
     },
 
-    {
-        id: "resume",
-        title: "Resume",
-    },
-
 
 ];
+const resumeDownloadLink = "https://drive.google.com/uc?export=download&id=1qte9396ENtaz2Lx_0T4CvE3bgBlXOX_c";
+
+const resumeIframeviewLink = "https://drive.google.com/file/d/1qte9396ENtaz2Lx_0T4CvE3bgBlXOX_c/preview";
 
 const services = [
     {
@@ -379,4 +382,4 @@ const journals =[{
     source_code_link: "https://link.springer.com/article/10.1007/s41810-020-00083-1",
 }]
 
-export { name ,services, frameworks,others,languages, experiences, testimonials,journals,qualities, projects };
+export { name ,services, frameworks,others,languages, experiences, testimonials,journals,qualities, projects, resumeIframeviewLink, resumeDownloadLink };
