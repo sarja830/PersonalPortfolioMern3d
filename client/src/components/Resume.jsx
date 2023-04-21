@@ -1,70 +1,39 @@
-import React, {useState} from "react";
-import Tilt from "react-parallax-tilt";
-import { motion } from "framer-motion";
-import Typed from 'react-typed';
-import { styles } from "../styles";
-import { services } from "../constants";
+
+import React, { useState, useEffect } from "react";
 import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
-import {resume} from "../assets/index.js";
-// import {Document,Page,pdfjs} from 'react-pdf';
+import { resume } from "../assets";
 
-import {Document, Page, PDFDownloadLink, StyleSheet, Text, View} from "@react-pdf/renderer";
-import React from "react";
-import {pdfjs} from "react-pdf";
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/legacy/build/pdf.worker.min.js`;
+import { Document, Page, pdfjs } from "react-pdf";
+import "react-pdf/dist/esm/Page/TextLayer.css";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 
-// Create styles
-const styles = StyleSheet.create({
-    page: {
-        flexDirection: "row",
-        backgroundColor: "#E4E4E4",
-    },
-    section: {
-        margin: 10,
-        padding: 10,
-        flexGrow: 1,
-    },
-});
-
-
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const Resume = () => {
-
-    const MyDoc = () => (
-        <Document>
-            <Page size="A4" style={styles.page}>
-                <View style={styles.section}>
-                    <Text>Section #1</Text>
-                </View>
-                <View style={styles.section}>
-                    <Text>Section #2</Text>
-                </View>
-            </Page>
-        </Document>
-    );
-
-    return (
+    const [width, setWidth] = useState(100);
 
 
+        useEffect(() => {
 
-    <div>
-        <PDFDownloadLink
-            className=" bg-slate-600"
-            document={<MyDoc />}
-            fileName={resume}
-        >
-            {
-                ({
-                  blob, url, loading, error }) =>
+            setWidth(window.innerWidth);
+        }, []);
 
-                <button className=" bg-slate-500">Download now!</button>
-                )
-            }
-        </PDFDownloadLink>
-    </div>
+        return (
+            <div fluid className="container mx-auto">
 
-    );
-};
+                <a href={"https://drive.google.com/file/d/1qte9396ENtaz2Lx_0T4CvE3bgBlXOX_c/view?usp=sharing"} target="_blank"
+                   rel="noreferrer">
+                    Open Second PDF
+                </a>
+                <div className="grid grid-rows-1 grid-flow-col gap-4">
+
+                <Document file={resume} className="d-flex justify-content-center">
+                        <Page pageNumber={1} scale={width > 786 ? 1.0 : 0.6} />
+                    </Document>
+                </div>
+            </div>
+        );
+    };
+
 
 export default SectionWrapper(Resume, "resume");
