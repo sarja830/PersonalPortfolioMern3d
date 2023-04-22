@@ -21,7 +21,6 @@ import {
     shopify,
     paytm,
     carrent,
-    jobit,
     tripguide,
     journal,
     threejs,
@@ -35,7 +34,7 @@ import {
     java,
     python,
     jenkins, postgres, rabbitmq, springboot,
-    theindiancraftstore,
+    theindiancraftstore, portfolio, mapreduce,
 
 
 } from "../assets";
@@ -62,10 +61,10 @@ export const navLinks = [
         id: "research",
         title: "Research",
     },
-    {
-        id: "testimonials",
-        title: "Testimonials",
-    },
+    // {
+    //     id: "testimonials",
+    //     title: "Testimonials",
+    // },
     {
         id: "resume",
         title: "Resume",
@@ -203,7 +202,7 @@ const frameworks = [
 
 
 
-
+const githubLink ="https://github.com/sarja830";
 const experiences = [
     {
         title: "University At Buffalo",
@@ -212,8 +211,9 @@ const experiences = [
         iconBg: "white",
         date: "August 2022 - Present",
         points: [
-            "Transcript  "
         ],
+        viewTranscript:"https://drive.google.com/file/d/1A-b2aBjl7FKhF8nGudHTy2wOIq_Q7M90/view?usp=sharing",
+        transcriptLink:"https://drive.google.com/uc?export=download&id=1A-b2aBjl7FKhF8nGudHTy2wOIq_Q7M90",
         link:"https://www.buffalo.edu/"
     },
     {
@@ -250,8 +250,10 @@ const experiences = [
         iconBg: "white",
         date: "June 2017 - July 2021",
         points: [
-            "Transcript"
+
         ],
+        viewTranscript:"https://drive.google.com/file/d/1xkT4siExyJVE5oMJVn7fCq_xq7EByu3T/view?usp=sharing",
+        transcriptLink: "https://drive.google.com/uc?export=download&id=1xkT4siExyJVE5oMJVn7fCq_xq7EByu3T",
         link:"https://www.msrit.edu/"
     }
 ];
@@ -295,65 +297,99 @@ const projects = [
     {
         name: "The Indian Craft Store",
         description:
-            "\"The Indian Craft Store\" is an efficient and user-friendly platform that connects buyers and sellers of handmade art and craft products, promoting and supporting India's rich cultural heritage.",
+            `A platform that connects buyers and sellers of handmade art and craft products. To ensure a safe and secure trading experience, the platform offers authentication, login, and password reset functionality. Customers can easily search and filter products.
+It also includes a multi-tenant user panel that allows customers to view and track their order status. Additionally, an admin panel is available for sellers to manage their product listings.
+To keep customers and sellers informed, the platform includes email notifications triggered on set events, such as order confirmation, shipping, and delivery updates.`,
         tags: [
             {
-                name: "react",
+                name: "React",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "Mongodb",
                 color: "green-text-gradient",
             },
             {
-                name: "React-bootstrap",
+                name: "Node.Js",
                 color: "pink-text-gradient",
             },
         ],
         image: theindiancraftstore,
         source_code_link: "https://github.com/",
+        view_link:"https://theindiancraftstore.netlify.app/"
     },
     {
-        name: "Job IT",
+        name: "Personal Portfolio 3D",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "Curated just for you: my best work and accomplishments.It is a full stack portfolio website built using MERN stack for showcasing a visual journey through my professional achievements.",
         tags: [
             {
-                name: "react",
+                name: "React",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "Node.Js",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "tailwindcss",
                 color: "pink-text-gradient",
             },
+            {
+                name: "Mongodb",
+                color: "orange-text-gradient",
+            },
         ],
-        image: jobit,
+        image: portfolio,
         source_code_link: "https://github.com/",
+        view_link:"https://sarthakjain.works/"
     },
     {
-        name: "Trip Guide",
+        name: "Scalable Word Counting ",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Analyzing large text datasets in Hadoop, which involves using the MapReduce programming model to distribute the processing workload across multiple nodes in a Hadoop cluster. The technique involves counting the number of occurrences of each word in a given text corpus while eliminating stop words and punctuation marks to enhance the accuracy of the analysis." +
+            " By removing stop words and punctuation, the technique helps reduce noise in the data and improve the quality of the analysis.",
         tags: [
             {
-                name: "nextjs",
+                name: "Hadoop",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "Java",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "Map Reduce",
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
+        image: mapreduce,
         source_code_link: "https://github.com/",
+        view_link:"https://sarthakjain.works/"
+    },
+    {
+        name: "Hollytics",
+        description:
+        `A tool that can analyze Hollywood data and provide valuable insights into the latest industry trends. The project consists of a web-based platform that interprets data from the IMDb dataset which is loaded to the PostgresSQL via an automated python script.
+        The platform uses complex SQL queries to provide highly accurate insights into Cinema's latest developments. The tool is designed to be user-friendly, allowing users to access the insights easily and quickly with the help of advanced DBMS concepts.`,
+        
+        tags: [
+            {
+                name: "PostgreSQL",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Python",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Bash",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: mapreduce,
+        source_code_link: "https://github.com/",
+        view_link:"https://sarthakjain.works/"
     },
 ];
 const journals =[{
@@ -381,5 +417,9 @@ const journals =[{
     image: journal,
     source_code_link: "https://link.springer.com/article/10.1007/s41810-020-00083-1",
 }]
+const leetcodeProfile ='https://leetcode.com/sarja830/'
+const contactViaEmail= 'mailto:sjain34@vuffalo.edu'
+const mediumBlog= "https://medium.com/@sarthjain830/different-views-of-a-binary-tree-left-view-and-right-view-of-a-binary-tree-with-breadth-first-de4b5675bd69"
 
-export { name ,services, frameworks,others,languages, experiences, testimonials,journals,qualities, projects, resumeIframeviewLink, resumeDownloadLink };
+
+export { name ,services, mediumBlog, githubLink, contactViaEmail, frameworks, leetcodeProfile, others,languages, experiences, testimonials,journals,qualities, projects, resumeIframeviewLink, resumeDownloadLink };

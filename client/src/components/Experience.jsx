@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
-import { experiences } from "../constants";
+import {experiences, resumeDownloadLink, resumeIframeviewLink} from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
@@ -47,10 +47,30 @@ const ExperienceCard = ({ experience }) => {
           <li
             key={`experience-point-${index}`}
             className='text-white-100 text-[14px] pl-1 tracking-wider'
-          >
-            {point}
+          >{point}
+
           </li>
         ))}
+
+          {experience.viewTranscript ? (
+              <button
+                  type="button"
+                  className=" text-secondary text-[17px] items-center  text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              >
+                  <a target="_blank" href={experience.viewTranscript}> View Transcript </a>
+              </button>
+          ) : null}
+
+          {experience.transcriptLink ? (
+              <button
+                  onClick={(e) => {window.open(experience.transcriptLink, "_blank");}}
+                  type="button"
+                  className=" text-secondary text-[17px] items-center  text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              >
+                  Download Transcript
+
+              </button>
+          ) : null}
       </ul>
     </VerticalTimelineElement>
   );

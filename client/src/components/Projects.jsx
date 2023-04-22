@@ -15,6 +15,7 @@ const ProjectCard = ({
                          tags,
                          image,
                          source_code_link,
+                         view_link
                      }) => {
     return (
         <motion.div
@@ -29,7 +30,7 @@ const ProjectCard = ({
             >
                 <div className='relative w-full h-[230px]'>
                     <div
-                        onClick={() => window.open(source_code_link, "_blank")}
+                        onClick={() => window.open(view_link, "_blank")}
                         className='w-full h-full object-cover  cursor-pointer rounded-2xl'
                     >
                         <img
@@ -37,24 +38,14 @@ const ProjectCard = ({
                             alt='project_image'
                             className='w-full h-full object-cover rounded-2xl'
                         />
-                        {/*for view link*/}
-                        {/*<div className='absolute inset-y-0 flex justify-end m-3 card-img_hover'>*/}
-                        {/*    <div*/}
-                        {/*        onClick={() => window.open(source_code_link, "_blank")}*/}
-                        {/*        className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'*/}
-                        {/*    >*/}
-                        {/*        <img*/}
-                        {/*            src={github}*/}
-                        {/*            alt='source code'*/}
-                        {/*            className='w-1/2 h-1/2 object-contain'*/}
-                        {/*        />*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
 
                         {/*  for github link*/}
                         <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
                             <div
-                                onClick={() => window.open(source_code_link, "_blank")}
+                                onClick={(e) => {
+                                    e.stopPropagation()
+                                    window.open(source_code_link, "_blank")
+                                }}
                                 className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
                             >
                                 <img

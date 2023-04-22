@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="989a0326-62cd-4635-8d9b-481c119c529b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/company/meta.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/company/meta.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/company/shopify.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/company/shopify.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/company/starbucks.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/company/starbucks.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/company/tesla.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/company/tesla.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Research.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Research.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Experience.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Experience.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Skills.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Skills.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/constants/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,21 +25,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/sarthakjain/Documents/GitHub/PersonalPortfolio3dMern",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sarthakjain/Documents/GitHub/PersonalPortfolio3dMern&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/components" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -50,7 +54,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681414026760</updated>
-      <workItem from="1681414028652" duration="8053000" />
+      <workItem from="1681414028652" duration="16296000" />
+      <workItem from="1681447892590" duration="1706000" />
+      <workItem from="1681476452221" duration="7000" />
+      <workItem from="1681492319885" duration="1199000" />
+      <workItem from="1681571756225" duration="7104000" />
+      <workItem from="1681659339621" duration="13559000" />
+      <workItem from="1681698499881" duration="39000" />
+      <workItem from="1681759057525" duration="16739000" />
+      <workItem from="1681998131412" duration="7000000" />
+      <workItem from="1682082532889" duration="2588000" />
+      <workItem from="1682101373792" duration="12769000" />
     </task>
     <servers />
   </component>
@@ -67,5 +81,22 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/components/Skills.jsx</url>
+          <line>124</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/components/Resume.jsx</url>
+          <line>24</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

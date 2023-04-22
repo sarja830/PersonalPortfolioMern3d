@@ -45,12 +45,13 @@ import tesla from "./company/tesla.png";
 import paytm from "./company/paytm.png";
 import paytmmall from "./company/paytmmall.png";
 
-import resume from "./SarthakJain-Resume.pdf"
+
 
 import carrent from "./carrent.png";
-import jobit from "./jobit.png";
+import portfolio from "./portfolio.png";
 import tripguide from "./tripguide.png";
 import theindiancraftstore from "./theindiancraftstore.png";
+import mapreduce from "./mapreduce.png";
 import journal from "./journal3.png";
 
 
@@ -81,7 +82,7 @@ export {
   starbucks,
   tesla,
   carrent,
-  jobit,
+
   tripguide,
     springer,
     journal,
@@ -100,5 +101,6 @@ export {
     spark,
   postgres,
   theindiancraftstore,
-    resume
+    portfolio,
+    mapreduce
 };

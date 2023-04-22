@@ -67,7 +67,7 @@ const Skills = () => {
         <>
             <motion.div variants={textVariant()}>
                 <p className={`${styles.sectionSubText} text-center`}>
-                    Tech Stack I have been working so far.
+                    My current tech toolkit
                 </p>
                 <h2 className={`${styles.sectionHeadText} text-center`}>
                     Skills.

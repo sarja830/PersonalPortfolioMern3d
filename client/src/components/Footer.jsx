@@ -13,8 +13,10 @@ import {
     faDribbble,
     faLinkedin
 } from '@fortawesome/free-brands-svg-icons'
-import { faHouse } from '@fortawesome/free-solid-svg-icons'
+import {faHeart, faHouse} from '@fortawesome/free-solid-svg-icons'
 import { faUser } from '@fortawesome/free-regular-svg-icons'
+import {github} from "../assets/index.js";
+import {contactViaEmail, githubLink, leetcodeProfile, mediumBlog} from "../constants/index.js";
 library.add(faTwitter, faFacebook, faPinterest, faGithub, faWhatsapp,faLinkedin, faInstagram,faLinkedinIn, faHouse, faUser)
 
 // fab fa-twitter"
@@ -35,9 +37,8 @@ const Footer = () => {
                     <div className="container mx-auto px-4">
                         <div className="flex flex-wrap text-center lg:text-left">
                             <div className="w-full lg:w-6/12 px-4">
-                                <h4 className="text-xl mt-4 font-bold">Let's keep in touch!</h4>
-                                <h5 className="mt-1 mb-2 text-blueGray-500">Find us on any of these platforms, we
-                                    respond 1-2 business days.</h5>
+                                <h4 className="text-xl mt-4  font-bold ">Let's keep in touch!</h4>
+                                <h5 className="mt-1 mb-2 text-secondary text-blueGray-500">Find me on any of these platforms</h5>
                                 <div className="mt-6 lg:mb-0 mb-6">
                                     <a href="https://twitter.com/sarthjain830"
                                        target="_blank"
@@ -63,7 +64,7 @@ const Footer = () => {
                                        className=" text-github-regular shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-flex"
                                        type="button">
                                         <FontAwesomeIcon icon="fa-brands fa-github" className={`hover:bg-slate-800  p-2`} size={"2x"} />
-{/*<FontAwesomeIcon icon="fa-brands fa-github" style={{color: "#172a4a",}} />   size={"2x"} />*/}
+                                        {/*<FontAwesomeIcon icon="fa-brands fa-github" style={{color: "#172a4a",}} />   size={"2x"} />*/}
                                     </a>
 
                                     <a href=""
@@ -78,7 +79,7 @@ const Footer = () => {
                                        className=" text-github-regular shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-flex"
                                        type="button">
                                         {/*<FontAwesomeIcon icon="fa-brands fa-linkedin" class style={{color: "#3270dc",}} size={"2x"} />*/}
-                                         <FontAwesomeIcon icon="fa-brands fa-brands fa-linkedin-in" className={"hover:bg-sky-700 p-2"} size={"2x"} />
+                                        <FontAwesomeIcon icon="fa-brands fa-brands fa-linkedin-in" className={"hover:bg-sky-700 p-2"} size={"2x"} />
                                     </a>
                                 </div>
                             </div>
@@ -86,33 +87,54 @@ const Footer = () => {
                                 <div className="flex flex-wrap items-top mb-6">
                                     <div className="w-full lg:w-4/12 px-4 ml-auto">
                                         <span className="block uppercase text-xs font-bold mb-2">Useful Links</span>
-                                        <ul className="list-unstyled"><a
-                                            href="https://www.creative-tim.com/presentation?npr-landing-1"
-                                            target="_blank"
-                                            className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">About
-                                            Us</a><a href="https://www.creative-tim.com/blog?npr-landing-1"
-                                                     target="_blank"
-                                                     className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">Blog</a><a
-                                            href="https://github.com/creativetimofficial" target="_blank"
-                                            className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">Github</a><a
-                                            href="https://www.creative-tim.com/templates/free?npr-landing-1"
-                                            target="_blank"
-                                            className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">Free
-                                            Products</a></ul>
+                                        <ul className="list-unstyled">
+                                            <a
+                                                href="https://www.creative-tim.com/presentation?npr-landing-1"
+                                                target="_blank"
+                                                className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">About
+                                                Us</a>
+                                            <a href=""
+                                               target="_blank"
+                                               className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm"> Personal Blog (coming soon)</a>
+
+                                            <a
+                                                href={githubLink} target="_blank"
+                                                className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">Github</a>
+
+                                            <a
+                                                href={mediumBlog}
+                                                target="_blank"
+                                                className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">
+                                                Medium Blogs</a>
+                                        </ul>
                                     </div>
                                     <div className="w-full lg:w-4/12 px-4 ml-auto">
                                         <span className="block uppercase text-xs font-bold mb-2">Other Resources</span>
-                                        <ul className="list-unstyled"><a
-                                            href="https://www.creative-tim.com/license?npr-landing-1" target="_blank"
-                                            className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">License</a><a
-                                            href="https://www.creative-tim.com/terms?npr-landing-1" target="_blank"
-                                            className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">Terms &amp; Conditions</a><a
-                                            href="https://www.creative-tim.com/privacy?npr-landing-1" target="_blank"
-                                            className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">Privacy
-                                            Policy</a><a href="https://www.creative-tim.com/contact-us?npr-landing-1"
-                                                         target="_blank"
-                                                         className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">Contact
-                                            Us</a></ul>
+                                        <ul className="list-unstyled">
+                                            <a
+                                                href={leetcodeProfile} target="_blank"
+                                                className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">
+                                                Leetcode Profile
+                                            </a>
+                                            <a href={contactViaEmail}
+                                               target="_blank"
+                                               className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">
+                                                Contact via email
+                                            </a>
+                                            <a
+                                                href="" target="_blank"
+                                                className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">
+
+                                            </a>
+
+                                            <a
+                                                href="" target="_blank"
+                                                className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">
+
+                                            </a>
+
+
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +142,7 @@ const Footer = () => {
                         <hr className="my-6 border-blueGray-200"/>
                         <div className="flex flex-wrap items-center md:justify-between justify-center">
                             <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-                                <div className="text-sm text-blueGray-500 py-1">Copyright © 2023 Created by Sarthak
+                                <div className="text-sm text-blueGray-500 py-1">Copyright © 2023  Made with &nbsp; <FontAwesomeIcon icon={faHeart} beat style={{color: "#e51515",}} /> &nbsp; by SARTHAK JAIN
                                 </div>
                             </div>
                         </div>
