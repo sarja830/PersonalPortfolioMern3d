@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="989a0326-62cd-4635-8d9b-481c119c529b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Experience.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Experience.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Skills.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Skills.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/constants/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +62,9 @@
       <workItem from="1681998131412" duration="7000000" />
       <workItem from="1682082532889" duration="2588000" />
       <workItem from="1682101373792" duration="12769000" />
+      <workItem from="1682132179826" duration="9580000" />
+      <workItem from="1682178440637" duration="1290000" />
+      <workItem from="1682180099150" duration="17000" />
     </task>
     <servers />
   </component>
@@ -93,7 +93,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/components/Resume.jsx</url>
           <line>24</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

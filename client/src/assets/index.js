@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -10,7 +10,7 @@ import close from "./close.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
+
 
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -38,20 +38,20 @@ import mongodb from "./tech/mongodb.png";
 
 
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import ramaiah from "./company/ramaiah.png";
+import ub from "./company/ub.png";
 import paytm from "./company/paytm.png";
 import paytmmall from "./company/paytmmall.png";
 
 
 
-import carrent from "./carrent.png";
+
 import portfolio from "./portfolio.png";
-import tripguide from "./tripguide.png";
 import theindiancraftstore from "./theindiancraftstore.png";
 import mapreduce from "./mapreduce.png";
+import corona from "./corona.jpg";
+import hollytics from "./hollytics.jpeg";
+import mykindainsta from "./mykindainsta.png";
 import journal from "./journal3.png";
 
 
@@ -66,7 +66,6 @@ export {
   close,
   css,
   docker,
-  figma,
   git,
   html,
   javascript,
@@ -77,13 +76,8 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-
-  tripguide,
+  ramaiah,
+    ub,
     springer,
     journal,
     paytm,
@@ -102,5 +96,6 @@ export {
   postgres,
   theindiancraftstore,
     portfolio,
-    mapreduce
+    mapreduce,
+    corona, hollytics, mykindainsta
 };

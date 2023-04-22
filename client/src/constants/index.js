@@ -8,22 +8,14 @@ import {
     html,
     css,
     reactjs,
-    redux,
-    tailwind,
     nodejs,
     mongodb,
     git,
-    figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    ramaiah,
+    ub,
     paytm,
-    carrent,
-    tripguide,
     journal,
-    threejs,
     paytmmall,
     spark,
     hadoop,
@@ -34,9 +26,7 @@ import {
     java,
     python,
     jenkins, postgres, rabbitmq, springboot,
-    theindiancraftstore, portfolio, mapreduce,
-
-
+    theindiancraftstore, portfolio, mapreduce, corona,hollytics,mykindainsta
 } from "../assets";
 import {faJenkins} from "@fortawesome/free-brands-svg-icons";
 
@@ -207,7 +197,7 @@ const experiences = [
     {
         title: "University At Buffalo",
         company_name: "Master's in Computer Science & Engineer",
-        icon: tesla,
+        icon: ub,
         iconBg: "white",
         date: "August 2022 - Present",
         points: [
@@ -246,7 +236,7 @@ const experiences = [
     {
         title: "Ramaiah Institute of Technology, VTU",
         company_name: "Bachelor of Engineering in Information Science and Engineering",
-        icon: starbucks,
+        icon: ramaiah,
         iconBg: "white",
         date: "June 2017 - July 2021",
         points: [
@@ -286,12 +276,12 @@ const testimonials = [
 ];
 const name = {
     name: ["Sarthak"],
-    descriptionLine1: "",
-    descriptionLine2: ""
+    descriptionLine1: "This website is a reflection of my passion for web development and my commitment to learn innovative and engaging technologies.\n",
+    descriptionLine2: "Thank you for visiting, and I hope you enjoy exploring my work!"
 
 }
 const qualities =
-    ["Avid Learner","Enthusiastic","Techie"]
+    ["Avid Learner","Curious","Enthusiastic","Hardworking"]
 
 const projects = [
     {
@@ -315,13 +305,14 @@ To keep customers and sellers informed, the platform includes email notification
             },
         ],
         image: theindiancraftstore,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://theindiancraftstore.netlify.app/",
         view_link:"https://theindiancraftstore.netlify.app/"
     },
     {
         name: "Personal Portfolio 3D",
         description:
-            "Curated just for you: my best work and accomplishments.It is a full stack portfolio website built using MERN stack for showcasing a visual journey through my professional achievements.",
+            "Curated just for you: my best work and accomplishments. It is a full stack portfolio website built using MERN stack for showcasing a visual journey through my professional achievements." +
+            "Using Three.js, I've used interactive 3D models and animations that bring my projects to life and provide a unique user experience. Whether you're interested in web development, 3D design, or simply exploring new technologies, my portfolio website has something for everyone.\n",
         tags: [
             {
                 name: "React",
@@ -347,7 +338,7 @@ To keep customers and sellers informed, the platform includes email notification
     {
         name: "Scalable Word Counting ",
         description:
-        "Analyzing large text datasets in Hadoop, which involves using the MapReduce programming model to distribute the processing workload across multiple nodes in a Hadoop cluster. The technique involves counting the number of occurrences of each word in a given text corpus while eliminating stop words and punctuation marks to enhance the accuracy of the analysis." +
+            "Analyzing large text datasets in Hadoop, which involves using the MapReduce programming model to distribute the processing workload across multiple nodes in a Hadoop cluster. The technique involves counting the number of occurrences of each word in a given text corpus while eliminating stop words and punctuation marks to enhance the accuracy of the analysis." +
             " By removing stop words and punctuation, the technique helps reduce noise in the data and improve the quality of the analysis.",
         tags: [
             {
@@ -370,9 +361,9 @@ To keep customers and sellers informed, the platform includes email notification
     {
         name: "Hollytics",
         description:
-        `A tool that can analyze Hollywood data and provide valuable insights into the latest industry trends. The project consists of a web-based platform that interprets data from the IMDb dataset which is loaded to the PostgresSQL via an automated python script.
+            `A tool that can analyze Hollywood data and provide valuable insights into the latest industry trends. The project consists of a web-based platform that interprets data from the IMDb dataset which is loaded to the PostgresSQL via an automated python script.
         The platform uses complex SQL queries to provide highly accurate insights into Cinema's latest developments. The tool is designed to be user-friendly, allowing users to access the insights easily and quickly with the help of advanced DBMS concepts.`,
-        
+
         tags: [
             {
                 name: "PostgreSQL",
@@ -387,9 +378,61 @@ To keep customers and sellers informed, the platform includes email notification
                 color: "pink-text-gradient",
             },
         ],
-        image: mapreduce,
+        image: hollytics,
         source_code_link: "https://github.com/",
         view_link:"https://sarthakjain.works/"
+    },
+    {
+        name: "COVID combat",
+        description:
+            `It is a web-based platform designed to help combat the COVID-19 pandemic by enabling users to report COVID-19 positive suspects in their vicinity. With this platform, users can easily report suspected cases of COVID-19, which are then made visible to the relevant administrative heads of states on a district-wise basis.
+The goal of this platform is to facilitate early detection of COVID-19 cases, which can help prevent the spread of the virus. By reporting suspected cases through this platform, users can take an active role in the fight against COVID-19 and become "corona warriors.`,
+        tags: [
+            {
+                name: "HTML",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "CSS",
+                color: "green-text-gradient",
+            },
+            {
+                name: "JSP",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: corona,
+        source_code_link: "https://github.com/sarja830/COVID-combat",
+        view_link:"https://github.com/sarja830/COVID-combat"
+    },
+    {
+        name: "Mykindainsta",
+        description:
+            `It is a social media platform developed using the MERN stack. The platform offers a personalized experience for users to connect and share with others based on their interests.
+
+One of the platform's top priorities is ensuring the security and confidentiality of user data. To achieve this, "MyKindaInsta" uses SHA-256 encryption to securely store sensitive user information like passwords.
+
+In addition to its robust security measures, "MyKindaInsta" features a user-friendly interface that allows users to easily create and customize their profiles, share posts, and interact with other users.`,
+        tags: [
+            {
+                name: "React",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Material UI",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Node.Js",
+                color: "pink-text-gradient",
+            },
+            {   name: "Mongodb",
+                color: "orange-text-gradient",
+            },
+        ],
+        image: mykindainsta,
+        source_code_link: "https://github.com/sarja830/Mykindainsta/",
+        view_link:"https://github.com/sarja830/Mykindainsta/"
     },
 ];
 const journals =[{

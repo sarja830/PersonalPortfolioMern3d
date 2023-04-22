@@ -67,7 +67,7 @@ const Footer = () => {
                                         {/*<FontAwesomeIcon icon="fa-brands fa-github" style={{color: "#172a4a",}} />   size={"2x"} />*/}
                                     </a>
 
-                                    <a href=""
+                                    <a href="https://api.whatsapp.com/send/?phone=7162926593&text&type=phone_number&app_absent=0"
                                        target="_blank"
                                        className=" text-github-regular shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-flex"
                                        type="button">
@@ -89,10 +89,11 @@ const Footer = () => {
                                         <span className="block uppercase text-xs font-bold mb-2">Useful Links</span>
                                         <ul className="list-unstyled">
                                             <a
-                                                href="https://www.creative-tim.com/presentation?npr-landing-1"
+                                                href=""
                                                 target="_blank"
-                                                className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">About
-                                                Us</a>
+                                                className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">
+
+                                            </a>
                                             <a href=""
                                                target="_blank"
                                                className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm"> Personal Blog (coming soon)</a>

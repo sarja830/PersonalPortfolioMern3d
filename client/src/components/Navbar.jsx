@@ -42,13 +42,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          {/*<img src={logo} alt='logo' className='w-9 h-9 object-contain' />*/}
-          <p className=' text-white
-          bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500
-           text-[35px] font-bold cursor-pointer flex '>
-            &nbsp; Sarthak &nbsp;
-            {/*<span className='sm:block hidden'> </span>*/}
-          </p>
+          <img src={logo} alt='logo' className='w-40 h-13 object-contain' />
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
