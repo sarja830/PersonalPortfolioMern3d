@@ -19,5 +19,12 @@ https://icons8.com/profile/summary
 5. construct an api to fetch the link from mongodb so that it can be dynamic
 
 
+#DEPLOYMENT INSTRUCTIONS
+1. make the build of client (react app)
+2. commit it to main branch
+3. log in to droplet via ssh 
+4. clone the updated repo via http(the repo shpuld be public)
+5. inside the project folder: pm2 start app.js
+6. pm2 list to see the deployment
 
 
