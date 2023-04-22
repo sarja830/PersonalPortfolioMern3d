@@ -11,20 +11,20 @@ https://icons8.com/profile/summary
 
 5. generate downloadable link from here https://sites.google.com/site/gdocs2direct/ for public files
 
-### TODO to complete the deployment process:
+### TODO for future
 
-2. update the testimonials
-3. update footer links
-4. update projects 
-5. construct an api to fetch the link from mongodb so that it can be dynamic
+1. update the testimonials 
+2. construct an api to fetch the link from mongodb so that it can be dynamic
 
 
 #DEPLOYMENT INSTRUCTIONS
-1. make the build of client (react app)
+1. make the build of client (react app) via npm run build
 2. commit it to main branch
+3. make repo public
 3. log in to droplet via ssh 
 4. clone the updated repo via http(the repo shpuld be public)
 5. inside the project folder: pm2 start app.js
 6. pm2 list to see the deployment
+7. make repo pvt
 
 
