@@ -18,7 +18,6 @@ export {
   Hero,
   Navbar,
   About,
-
   Experience,
   Projects,
   Research,
