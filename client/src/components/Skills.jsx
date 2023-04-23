@@ -6,7 +6,7 @@ import { SectionWrapper } from "../hoc";
 import { frameworks } from "../constants";
 import { languages } from "../constants";
 import { others } from "../constants";
-import {BallCanvas} from "./canvas/index.js";
+
 import {motion} from "framer-motion";
 import {textVariant} from "../utils/motion.js";
 import {styles} from "../styles.js";

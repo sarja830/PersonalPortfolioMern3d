@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+
 import {name} from '../constants/index'
 import {qualities} from '../constants/index'
 import {faHeart, faHouse} from '@fortawesome/free-solid-svg-icons'

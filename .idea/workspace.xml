@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="989a0326-62cd-4635-8d9b-481c119c529b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/hollytics.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/hollytics.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Contact.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Hero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/canvas/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/canvas/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +68,7 @@
       <workItem from="1682132179826" duration="9580000" />
       <workItem from="1682178440637" duration="1290000" />
       <workItem from="1682180099150" duration="17000" />
+      <workItem from="1682217460827" duration="1957000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-import { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas } from './canvas/index.js';
+import { EarthCanvas, StarsCanvas } from './canvas/index.js';
 import Hero from './Hero.jsx';
 import Navbar from './Navbar.jsx';
 import About from './About.jsx';
@@ -25,8 +25,6 @@ export {
   Feedbacks,
   Contact,
   EarthCanvas,
-  BallCanvas,
-  ComputersCanvas,
   StarsCanvas,
     Footer,
     Skills,
