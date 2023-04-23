@@ -46,12 +46,12 @@ import paytmmall from "./company/paytmmall.png";
 
 
 
-import portfolio from "./portfolio.png";
-import theindiancraftstore from "./theindiancraftstore.png";
-import mapreduce from "./mapreduce.png";
-import corona from "./corona.jpg";
+import portfolio from "./portfolio.jpeg";
+import theindiancraftstore from "./theindiancraftstore.jpeg";
+import mapreduce from "./mapreduce.jpeg";
+import corona from "./corona.jpeg";
 import hollytics from "./hollytics.jpeg";
-import mykindainsta from "./mykindainsta.png";
+import mykindainsta from "./mykindainsta.jpeg";
 import journal from "./journal3.png";
 
 
