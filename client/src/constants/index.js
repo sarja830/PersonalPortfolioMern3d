@@ -332,7 +332,7 @@ const projects = [
         ],
         image: gshop,
         source_code_link: "",
-        view_link:"https://www.lifetreewny.com/"
+        view_link:""
     },
     {
         name: "Lifetree WNY Services",
