@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="989a0326-62cd-4635-8d9b-481c119c529b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/dist/assets/lifetreewny.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/gshop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/lifetreewny.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/hollytics.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/hollytics.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Contact.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Hero.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/canvas/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/canvas/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Experience.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Experience.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Projects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Projects.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Research.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Research.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/constants/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,23 +30,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/sarthakjain/Documents/GitHub/PersonalPortfolio3dMern&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TODO_SCOPE": "All Places",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/sarthakjain/Documents/GitHub/PersonalPortfolio3dMern/client/src/assets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/src/components" />
     </key>
@@ -68,7 +77,16 @@
       <workItem from="1682132179826" duration="9580000" />
       <workItem from="1682178440637" duration="1290000" />
       <workItem from="1682180099150" duration="17000" />
-      <workItem from="1682217460827" duration="1957000" />
+      <workItem from="1682217460827" duration="3722000" />
+      <workItem from="1683496133949" duration="2237000" />
+      <workItem from="1683896910002" duration="65000" />
+      <workItem from="1683999072194" duration="15000" />
+      <workItem from="1684272794980" duration="597000" />
+      <workItem from="1684340488681" duration="12000" />
+      <workItem from="1688052666589" duration="1291000" />
+      <workItem from="1691338037827" duration="7572000" />
+      <workItem from="1692496953945" duration="10655000" />
+      <workItem from="1692843745926" duration="9894000" />
     </task>
     <servers />
   </component>

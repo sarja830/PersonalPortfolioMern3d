@@ -48,11 +48,13 @@ import paytmmall from "./company/paytmmall.png";
 
 import portfolio from "./portfolio.jpeg";
 import theindiancraftstore from "./theindiancraftstore.jpeg";
+import lifetreewny from "./lifetreewny.png";
 import mapreduce from "./mapreduce.jpeg";
 import corona from "./corona.jpeg";
 import hollytics from "./hollytics.jpeg";
 import mykindainsta from "./mykindainsta.jpeg";
 import journal from "./journal3.png";
+import gshop from "./gshop.png";
 
 
 export {
@@ -97,5 +99,5 @@ export {
   theindiancraftstore,
     portfolio,
     mapreduce,
-    corona, hollytics, mykindainsta
+    corona, hollytics, mykindainsta, lifetreewny, gshop
 };

@@ -25,7 +25,7 @@ export {
   Contact,
   EarthCanvas,
   StarsCanvas,
-    Footer,
-    Skills,
-    Resume
+  Footer,
+  Skills,
+  Resume
 }

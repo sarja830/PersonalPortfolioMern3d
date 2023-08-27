@@ -26,7 +26,7 @@ import {
     java,
     python,
     jenkins, postgres, rabbitmq, springboot,
-    theindiancraftstore, portfolio, mapreduce, corona,hollytics,mykindainsta
+    theindiancraftstore, portfolio, mapreduce, corona, hollytics, mykindainsta, lifetreewny, gshop
 } from "../assets";
 import {faJenkins} from "@fortawesome/free-brands-svg-icons";
 
@@ -195,8 +195,26 @@ const frameworks = [
 const githubLink ="https://github.com/sarja830";
 const experiences = [
     {
-        title: "University At Buffalo",
-        company_name: "Master's in Computer Science & Engineer",
+        title: "University at Buffalo, SUNY",
+        company_name: "Master's in Computer Science & Engineering",
+        subexperience :[
+            {
+                title:"Research Foundation, SUNY",
+                company_name: "Graduate Research Assistant",
+                icon: paytm,
+                iconBg: "white",
+                date: "June 2022 - Present",
+                points: [
+                    ` Building a SaaS product which empowers traditional product-based businesses and nontraditional service-based enterprises to efficiently transition their ventures online. `,
+ `It enables price negotiation, order management, and proposal tracking for customers and owners`,
+ `Developed utilizing the multitenant architecture which adheres to the separation of concern design principle.`
+
+                ],
+                link:"https://www.rfsuny.org/",
+                Project : "Gshop",
+                Date:"June 05, 2023 - Present"
+            }
+        ],
         icon: ub,
         iconBg: "white",
         date: "August 2022 - Present",
@@ -282,14 +300,81 @@ const name = {
 }
 const qualities =
     ["Avid Learner","Curious","Enthusiastic","Hardworking"]
-
 const projects = [
+    {
+        name: "Gshop",
+        description: [
+
+            `Empowerment: Designed to empower both traditional product-based businesses and nontraditional service-based enterprises to transition effectively to the online space.`,
+
+            `Price Negotiation: The platform provides tools for businesses to engage in virtual price negotiations with their customers or clients, facilitating agreement on product or service pricing.`,
+
+            `Order Management: Seamless order management is a key focus, ensuring efficient processes for order placement, tracking, and fulfillment, benefiting both customers and business owners.`,
+
+            `Proposal Tracking: For service-based businesses features to track proposals, facilitating efficient communication.`,
+
+            `Multitenant Architecture: Allowing a single instance of the software to serve multiple customers.`,
+
+        ],
+        tags: [
+            {
+                name: "Node.Js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "postgreSQL",
+                color: "green-text-gradient",
+            },
+            {
+                name: "React",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: gshop,
+        source_code_link: "",
+        view_link:"https://www.lifetreewny.com/"
+    },
+    {
+        name: "Lifetree WNY Services",
+        description: [`Efficient Operations: Developed a web app to streamline daily business tasks and improve operational efficiency.`,
+            ` Customer Management: Implemented a system to track proposals and manage potential customers, enhancing customer relationship management.`,
+            `QuickBooks Integration: Enabled seamless invoicing by integrating with QuickBooks, optimizing financial management.` ,
+            `Geolocation for Crew: Integrated map coordinates to display job locations, boosting crew efficiency by enabling them to tackle nearby tasks effectively.`],
+        tags: [
+            {
+                name: "Node.Js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "postgreSQL",
+                color: "green-text-gradient",
+            },
+            {
+                name: "React",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: lifetreewny,
+        source_code_link: "",
+        view_link:"https://www.lifetreewny.com/"
+    },
+
     {
         name: "The Indian Craft Store",
         description:
-            `A platform that connects buyers and sellers of handmade art and craft products. To ensure a safe and secure trading experience, the platform offers authentication, login, and password reset functionality. Customers can easily search and filter products.
-It also includes a multi-tenant user panel that allows customers to view and track their order status. Additionally, an admin panel is available for sellers to manage their product listings.
-To keep customers and sellers informed, the platform includes email notifications triggered on set events, such as order confirmation, shipping, and delivery updates.`,
+            [`Buyer-Seller Connection:
+Connects buyers and sellers of handmade art and craft products in a single platform.`,
+                `Security and Authentication:
+Offers authentication, login, and password reset features for a secure trading environment.`,
+                `Product Search and Filtering:
+Provides customers with easy product search and filtering options to find desired items.`,
+                `Multi-Tenant User Panel:
+Offers customers a user panel to view and track their order status across multiple orders.`,
+                `Seller Management Panel:
+Includes an admin panel that empowers sellers to manage their product listings efficiently.`,
+                `Email Notifications:
+Keeps customers and sellers informed with email notifications triggered by significant events, like order confirmation, shipping, and delivery updates.`
+                    ],
         tags: [
             {
                 name: "React",
@@ -311,8 +396,25 @@ To keep customers and sellers informed, the platform includes email notification
     {
         name: "Personal Portfolio 3D",
         description:
-            "Curated just for you: my best work and accomplishments. It is a full stack portfolio website built using MERN stack for showcasing a visual journey through my professional achievements." +
-            "Using Three.js, I've used interactive 3D models and animations that bring my projects to life and provide a unique user experience. Whether you're interested in web development, 3D design, or simply exploring new technologies, my portfolio website has something for everyone.\n",
+            [   `Tailored Showcase:
+
+Offers a curated selection of your finest work and accomplishments.`,
+                `MERN Stack Foundation:
+
+Built on the MERN stack (MongoDB, Express, React, Node.js) for a robust and dynamic web experience.`,
+                `Visual Journey:
+
+Presents a visual journey through your professional achievements, providing a comprehensive overview.`,
+                `Interactive 3D Elements:
+
+Utilizes Three.js to incorporate interactive 3D models and animations, enhancing project presentation.`,
+                `Enhanced User Experience:
+
+Creates a distinctive user experience by bringing projects to life with immersive visuals.`,
+                `Diverse Appeal:
+
+Appeals to a broad audience, whether interested in web development, 3D design, or emerging technologies.`
+],
         tags: [
             {
                 name: "React",
@@ -338,8 +440,16 @@ To keep customers and sellers informed, the platform includes email notification
     {
         name: "Scalable Word Counting ",
         description:
-            "Analyzing large text datasets in Hadoop, which involves using the MapReduce programming model to distribute the processing workload across multiple nodes in a Hadoop cluster. The technique involves counting the number of occurrences of each word in a given text corpus while eliminating stop words and punctuation marks to enhance the accuracy of the analysis." +
-            " By removing stop words and punctuation, the technique helps reduce noise in the data and improve the quality of the analysis.",
+            [
+                `Hadoop-based Analysis:
+Utilizes Hadoop to analyze extensive text datasets.`,
+    `MapReduce Implementation:
+    Applies the MapReduce programming model to distribute processing tasks across a Hadoop cluster.`,
+    `Word Occurrence Count:
+    Counts occurrences of words in a provided text corpus.`,
+    `Noise Reduction Techniques:
+    Enhances accuracy by eliminating stop words and punctuation marks from the analysis.`,
+    `Improved Analysis Quality: leads to higher-quality analysis results.`],
         tags: [
             {
                 name: "Hadoop",
@@ -361,88 +471,122 @@ To keep customers and sellers informed, the platform includes email notification
     {
         name: "Hollytics",
         description:
-            `A tool that can analyze Hollywood data and provide valuable insights into the latest industry trends. The project consists of a web-based platform that interprets data from the IMDb dataset which is loaded to the PostgresSQL via an automated python script.
-        The platform uses complex SQL queries to provide highly accurate insights into Cinema's latest developments. The tool is designed to be user-friendly, allowing users to access the insights easily and quickly with the help of advanced DBMS concepts.`,
+            [
+            ,`Hollywood Data Analysis Tool:
 
-        tags: [
-            {
-                name: "PostgreSQL",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Python",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Bash",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: hollytics,
-        source_code_link: "https://github.com/",
-        view_link:"https://sarthakjain.works/"
+Developed to analyze Hollywood data and extract meaningful insights about current industry trends.`
+,`Web-Based Platform:
+
+The project takes the form of a web-based platform for easy accessibility and interaction.`
+,`IMDb Dataset Integration:
+
+Utilizes an automated Python script to load data from the IMDb dataset into a PostgreSQL database.`
+,`Sophisticated SQL Queries:
+
+Leverages complex SQL queries to derive accurate and insightful information from the data.`
+
+
+            ],
+
+                tags: [
+    {
+        name: "PostgreSQL",
+        color: "blue-text-gradient",
     },
     {
-        name: "COVID combat",
-        description:
-            `It is a web-based platform designed to help combat the COVID-19 pandemic by enabling users to report COVID-19 positive suspects in their vicinity. With this platform, users can easily report suspected cases of COVID-19, which are then made visible to the relevant administrative heads of states on a district-wise basis.
-The goal of this platform is to facilitate early detection of COVID-19 cases, which can help prevent the spread of the virus. By reporting suspected cases through this platform, users can take an active role in the fight against COVID-19 and become "corona warriors.`,
-        tags: [
-            {
-                name: "HTML",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "CSS",
-                color: "green-text-gradient",
-            },
-            {
-                name: "JSP",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: corona,
-        source_code_link: "https://github.com/sarja830/COVID-combat",
-        view_link:"https://github.com/sarja830/COVID-combat"
+        name: "Python",
+        color: "green-text-gradient",
     },
     {
-        name: "Mykindainsta",
-        description:
-            `It is a social media platform developed using the MERN stack. The platform offers a personalized experience for users to connect and share with others based on their interests.
-
-One of the platform's top priorities is ensuring the security and confidentiality of user data. To achieve this, "MyKindaInsta" uses SHA-256 encryption to securely store sensitive user information like passwords.
-
-In addition to its robust security measures, "MyKindaInsta" features a user-friendly interface that allows users to easily create and customize their profiles, share posts, and interact with other users.`,
-        tags: [
-            {
-                name: "React",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Material UI",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Node.Js",
-                color: "pink-text-gradient",
-            },
-            {   name: "Mongodb",
-                color: "orange-text-gradient",
-            },
-        ],
-        image: mykindainsta,
-        source_code_link: "https://github.com/sarja830/Mykindainsta/",
-        view_link:"https://github.com/sarja830/Mykindainsta/"
+        name: "Bash",
+        color: "pink-text-gradient",
     },
+],
+    image: hollytics,
+    source_code_link: "https://github.com/",
+    view_link:"https://sarthakjain.works/"
+},
+{
+    name: "COVID combat",
+        description:
+    [
+        `COVID-19 Reporting Platform:
+
+Developed to aid in pandemic control by allowing users to report COVID-19 positive suspects in their vicinity`
+        ,`User-Generated Suspect Reports:
+Enables users to easily report potential COVID-19 cases, contributing to a collective effort for virus containment.`,
+        `District-Wise Data Aggregation:
+
+Organizes and presents reported cases on a district-wise basis, aiding local decision-making`,
+        `Early Detection Emphasis:
+
+Aims to identify potential COVID-19 cases promptly, supporting early detection strategies`
+    ],
+        tags: [
+    {
+        name: "HTML",
+        color: "blue-text-gradient",
+    },
+    {
+        name: "CSS",
+        color: "green-text-gradient",
+    },
+    {
+        name: "JSP",
+        color: "pink-text-gradient",
+    },
+],
+    image: corona,
+    source_code_link: "https://github.com/sarja830/COVID-combat",
+    view_link:"https://github.com/sarja830/COVID-combat"
+},
+{
+    name: "Mykindainsta",
+        description:
+    [
+        `MERN Stack Social Platform:
+
+Developed using the MERN stack for a comprehensive social media experience.`
+,`Personalized Connection:
+
+Offers users tailored connections and sharing based on individual interests.`
+,`Data Security with Encryption:
+
+Prioritizes security by using SHA-256 encryption to protect sensitive user data, including passwords.`
+,`User-Friendly Interaction:
+
+Provides a friendly interface for easy profile creation, post sharing, and interaction with others.`
+    ],
+        tags: [
+    {
+        name: "React",
+        color: "blue-text-gradient",
+    },
+    {
+        name: "Material UI",
+        color: "green-text-gradient",
+    },
+    {
+        name: "Node.Js",
+        color: "pink-text-gradient",
+    },
+    {   name: "Mongodb",
+        color: "orange-text-gradient",
+    },
+],
+    image: mykindainsta,
+    source_code_link: "https://github.com/sarja830/Mykindainsta/",
+    view_link:"https://github.com/sarja830/Mykindainsta/"
+},
 ];
 const journals =[{
     name: "Assessment and Prediction of PM2.5 in Delhi in View of Stubble Burn from Border States Using Collaborative Learning Model",
     description:
-        "A thick layer of smog blankets can be seen in Delhi," +
+        [    "A thick layer of smog blankets can be seen in Delhi," +
         " India in November, the primary season of stubble burning. " +
         " In this paper, the author attempts to estimate the value of PM2.5 in Delhi," +
         " mainly due to stubble burning in neighboring states. " +
-        "Various meteorological parameters are considered like wind speed, temperature, and relative humidity. The model used here is based on collaborative learning (stacking regression) which is trained using the out-of-folds predictions based on the complete training set, later the meta-regression is trained based on the outputs of the different regression methods in the group. The presented model is validated using different machine-learning methods, statistical measures, and the real-time stubble data of Delhi. ",
+        "Various meteorological parameters are considered like wind speed, temperature, and relative humidity. The model used here is based on collaborative learning (stacking regression) which is trained using the out-of-folds predictions based on the complete training set, later the meta-regression is trained based on the outputs of the different regression methods in the group. The presented model is validated using different machine-learning methods, statistical measures, and the real-time stubble data of Delhi. "],
     tags: [
         {
             name: "Journal",

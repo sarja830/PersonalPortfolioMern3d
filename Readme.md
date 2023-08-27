@@ -22,7 +22,7 @@ https://icons8.com/profile/summary
 2. commit it to main branch
 3. make repo public
 3. log in to droplet via ssh 
-4. clone the updated repo via http(the repo shpuld be public)
+4. clone the updated repo via http(the repo should be public)
 5. inside the project folder: pm2 start app.js
 6. pm2 list to see the deployment
 7. make repo pvt

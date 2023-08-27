@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
@@ -17,6 +17,8 @@ const ProjectCard = ({
                          source_code_link,
                          view_link
                      }) => {
+    const [showMore,setShowMore] = useState("");
+
     return (
         <div
             variants={fadeIn("", "spring", index * 0.5, 0.75)}>
@@ -26,7 +28,7 @@ const ProjectCard = ({
                     scale: 1,
                     speed: 450,
                 }}
-                className='bg-tertiary border p-5 rounded-2xl sm:w-[360px] w-full h-full'
+                className='bg-tertiary border p-5 rounded-2xl sm:w-[360px] w-full h-full mb-0'
             >
                 <div className='relative w-full h-[230px]'>
                     <div
@@ -57,13 +59,36 @@ const ProjectCard = ({
                         </div>
                     </div>
                 </div>
+
                 {/*for name and desdcriptions*/}
                 <div className='mt-5'>
                     <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-                    <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+                    {/*<p className='mt-2 text-secondary text-[14px] '>{showMore?description:description.split(".")[0]}*/}
+                    <p className='mt-2 text-secondary text-[14px] '>{showMore?
+                       (<ul className='mt-5 list-disc ml-5 space-y-2'>
+                            {description.map((point, index) => (
+                                <li
+                                    // key={`experience-point-${index}`}
+                                    className='text-white-100 text-[14px] pl-1 tracking-wider'
+                                >{point}
+
+                                </li>
+                            ))}
+                        </ul>)
+                        :description[0]}
+
+                        <br/>
+                        <br/>
+                        <span className="hover:cursor-pointer border-solid border-2 border-white-600 ml-2 p-1" onClick={()=>(setShowMore((prevState)=>(!prevState)))
+                        }>
+                        {showMore?'less ':'more '}
+                    </span>
+
+                    </p>
                 </div>
+
                 {/*for hashtags*/}
-                <div className='mt-4 flex flex-wrap gap-2'>
+                <div className='mb-2 mt-3 flex flex-wrap gap-2 '>
                     {tags.map((tag) => (
                         <p
                             key={`${name}-${tag.name}`}
@@ -73,6 +98,7 @@ const ProjectCard = ({
                         </p>
                     ))}
                 </div>
+
             </Tilt>
         </div>
     );
@@ -82,7 +108,8 @@ const Projects = () => {
     return (
         <>
             <div variants={textVariant()}>
-                <p className={`${styles.sectionSubText} `}>My work</p>
+                <p className={`${styles.sectionSubText} `}>
+                    Where Imagination Takes Form: A Showcase of My Projects</p>
                 <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
             </div>
 
@@ -91,11 +118,7 @@ const Projects = () => {
                     variants={fadeIn("", "", 0.1, 1)}
                     className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
                 >
-                    Following projects showcases my skills and experience through
-                    real-world examples of my work. Each project is briefly described with
-                    links to code repositories and live demos in it. It reflects my
-                    ability to solve complex problems, work with different technologies,
-                    and manage projects effectively.
+                    Dive into a World of Creativity and Innovation as you explore a curated selection of my diverse projects. From web design and development to graphic art and beyond, each project represents a unique journey of passion, skill, and dedication. Witness the transformative power of ideas coming to life and discover the artistry behind every endeavor.
                 </p>
             </div>
 
