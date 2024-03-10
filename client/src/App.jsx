@@ -32,7 +32,7 @@ const App = () => {
         <Projects />
         <Research/>
         <Awards/>
-        <Feedbacks />
+        {/*<Feedbacks />*/}
         <Resume/>
         <div className='relative z-0'>
           <Contact />
