@@ -1,7 +1,8 @@
 const nodemailer = require('nodemailer');
-const { NODE_MAILER_EMAIL,EMAIL, PASSWORD } = require('../config /keys');
+const { NODE_MAILER_EMAIL,EMAIL, PASSWORD } = require('../config/keys');
 
 exports.sendEmail = async(req,res)=> {
+    console.log(req);
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
         service:'gmail',

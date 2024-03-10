@@ -9,7 +9,7 @@ require('dotenv').config();
 
 const emailRoutes = require('./routes/email');
 
-const { DATABASE } = require('./config /keys');
+const { DATABASE } = require('./config/keys');
 
 // app
 const app = express();

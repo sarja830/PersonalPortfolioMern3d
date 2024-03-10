@@ -10,6 +10,7 @@ import Feedbacks from './Feedbacks.jsx';
 import Contact from './Contact.jsx';
 import Research from './Research.jsx';
 import Skills from './Skills.jsx';
+import Awards from './Awards.jsx';
 import Footer from './Footer.jsx';
 
 
@@ -21,11 +22,13 @@ export {
   Experience,
   Projects,
   Research,
+  Awards,
   Feedbacks,
   Contact,
   EarthCanvas,
   StarsCanvas,
   Footer,
   Skills,
-  Resume
+  Resume,
+
 }

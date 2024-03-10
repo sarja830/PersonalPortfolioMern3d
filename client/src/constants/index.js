@@ -51,10 +51,14 @@ export const navLinks = [
         id: "research",
         title: "Research",
     },
-    // {
-    //     id: "testimonials",
-    //     title: "Testimonials",
-    // },
+    {
+        id: "awards",
+        title: "Awards",
+    },
+    {
+        id: "testimonials",
+        title: "Feedbacks",
+    },
     {
         id: "resume",
         title: "Resume",
@@ -206,8 +210,8 @@ const experiences = [
                 date: "June 2022 - Present",
                 points: [
                     ` Building a SaaS product which empowers traditional product-based businesses and nontraditional service-based enterprises to efficiently transition their ventures online. `,
- `It enables price negotiation, order management, and proposal tracking for customers and owners`,
- `Developed utilizing the multitenant architecture which adheres to the separation of concern design principle.`
+                    `It enables price negotiation, order management, and proposal tracking for customers and owners`,
+                    `Developed utilizing the multitenant architecture which adheres to the separation of concern design principle.`
 
                 ],
                 link:"https://www.rfsuny.org/",
@@ -374,7 +378,7 @@ Offers customers a user panel to view and track their order status across multip
 Includes an admin panel that empowers sellers to manage their product listings efficiently.`,
                 `Email Notifications:
 Keeps customers and sellers informed with email notifications triggered by significant events, like order confirmation, shipping, and delivery updates.`
-                    ],
+            ],
         tags: [
             {
                 name: "React",
@@ -414,7 +418,7 @@ Creates a distinctive user experience by bringing projects to life with immersiv
                 `Diverse Appeal:
 
 Appeals to a broad audience, whether interested in web development, 3D design, or emerging technologies.`
-],
+            ],
         tags: [
             {
                 name: "React",
@@ -443,13 +447,13 @@ Appeals to a broad audience, whether interested in web development, 3D design, o
             [
                 `Hadoop-based Analysis:
 Utilizes Hadoop to analyze extensive text datasets.`,
-    `MapReduce Implementation:
+                `MapReduce Implementation:
     Applies the MapReduce programming model to distribute processing tasks across a Hadoop cluster.`,
-    `Word Occurrence Count:
+                `Word Occurrence Count:
     Counts occurrences of words in a provided text corpus.`,
-    `Noise Reduction Techniques:
+                `Noise Reduction Techniques:
     Enhances accuracy by eliminating stop words and punctuation marks from the analysis.`,
-    `Improved Analysis Quality: leads to higher-quality analysis results.`],
+                `Improved Analysis Quality: leads to higher-quality analysis results.`],
         tags: [
             {
                 name: "Hadoop",
@@ -472,112 +476,391 @@ Utilizes Hadoop to analyze extensive text datasets.`,
         name: "Hollytics",
         description:
             [
-            ,`Hollywood Data Analysis Tool:
+                ,`Hollywood Data Analysis Tool:
 
 Developed to analyze Hollywood data and extract meaningful insights about current industry trends.`
-,`Web-Based Platform:
+                ,`Web-Based Platform:
 
 The project takes the form of a web-based platform for easy accessibility and interaction.`
-,`IMDb Dataset Integration:
+                ,`IMDb Dataset Integration:
 
 Utilizes an automated Python script to load data from the IMDb dataset into a PostgreSQL database.`
-,`Sophisticated SQL Queries:
+                ,`Sophisticated SQL Queries:
 
 Leverages complex SQL queries to derive accurate and insightful information from the data.`
 
 
             ],
 
-                tags: [
-    {
-        name: "PostgreSQL",
-        color: "blue-text-gradient",
+        tags: [
+            {
+                name: "PostgreSQL",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Python",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Bash",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: hollytics,
+        source_code_link: "https://github.com/",
+        view_link:"https://sarthakjain.works/"
     },
     {
-        name: "Python",
-        color: "green-text-gradient",
-    },
-    {
-        name: "Bash",
-        color: "pink-text-gradient",
-    },
-],
-    image: hollytics,
-    source_code_link: "https://github.com/",
-    view_link:"https://sarthakjain.works/"
-},
-{
-    name: "COVID combat",
+        name: "COVID combat",
         description:
-    [
-        `COVID-19 Reporting Platform:
+            [
+                `COVID-19 Reporting Platform:
 
 Developed to aid in pandemic control by allowing users to report COVID-19 positive suspects in their vicinity`
-        ,`User-Generated Suspect Reports:
+                ,`User-Generated Suspect Reports:
 Enables users to easily report potential COVID-19 cases, contributing to a collective effort for virus containment.`,
-        `District-Wise Data Aggregation:
+                `District-Wise Data Aggregation:
 
 Organizes and presents reported cases on a district-wise basis, aiding local decision-making`,
-        `Early Detection Emphasis:
+                `Early Detection Emphasis:
 
 Aims to identify potential COVID-19 cases promptly, supporting early detection strategies`
-    ],
+            ],
         tags: [
-    {
-        name: "HTML",
-        color: "blue-text-gradient",
+            {
+                name: "HTML",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "CSS",
+                color: "green-text-gradient",
+            },
+            {
+                name: "JSP",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: corona,
+        source_code_link: "https://github.com/sarja830/COVID-combat",
+        view_link:"https://github.com/sarja830/COVID-combat"
     },
     {
-        name: "CSS",
-        color: "green-text-gradient",
-    },
-    {
-        name: "JSP",
-        color: "pink-text-gradient",
-    },
-],
-    image: corona,
-    source_code_link: "https://github.com/sarja830/COVID-combat",
-    view_link:"https://github.com/sarja830/COVID-combat"
-},
-{
-    name: "Mykindainsta",
+        name: "Mykindainsta",
         description:
-    [
-        `MERN Stack Social Platform:
+            [
+                `MERN Stack Social Platform:
 
 Developed using the MERN stack for a comprehensive social media experience.`
-,`Personalized Connection:
+                ,`Personalized Connection:
 
 Offers users tailored connections and sharing based on individual interests.`
-,`Data Security with Encryption:
+                ,`Data Security with Encryption:
 
 Prioritizes security by using SHA-256 encryption to protect sensitive user data, including passwords.`
-,`User-Friendly Interaction:
+                ,`User-Friendly Interaction:
 
 Provides a friendly interface for easy profile creation, post sharing, and interaction with others.`
-    ],
+            ],
         tags: [
+            {
+                name: "React",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Material UI",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Node.Js",
+                color: "pink-text-gradient",
+            },
+            {   name: "Mongodb",
+                color: "orange-text-gradient",
+            },
+        ],
+        image: mykindainsta,
+        source_code_link: "https://github.com/sarja830/Mykindainsta/",
+        view_link:"https://github.com/sarja830/Mykindainsta/"
+    },
+];
+const awards = [
     {
-        name: "React",
-        color: "blue-text-gradient",
+        name: "Gshop",
+        description: [
+
+            `Empowerment: Designed to empower both traditional product-based businesses and nontraditional service-based enterprises to transition effectively to the online space.`,
+
+            `Price Negotiation: The platform provides tools for businesses to engage in virtual price negotiations with their customers or clients, facilitating agreement on product or service pricing.`,
+
+            `Order Management: Seamless order management is a key focus, ensuring efficient processes for order placement, tracking, and fulfillment, benefiting both customers and business owners.`,
+
+            `Proposal Tracking: For service-based businesses features to track proposals, facilitating efficient communication.`,
+
+            `Multitenant Architecture: Allowing a single instance of the software to serve multiple customers.`,
+
+        ],
+        tags: [
+            {
+                name: "Node.Js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "postgreSQL",
+                color: "green-text-gradient",
+            },
+            {
+                name: "React",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: gshop,
+        source_code_link: "",
+        view_link:""
     },
     {
-        name: "Material UI",
-        color: "green-text-gradient",
+        name: "Lifetree WNY Services",
+        description: [`Efficient Operations: Developed a web app to streamline daily business tasks and improve operational efficiency.`,
+            ` Customer Management: Implemented a system to track proposals and manage potential customers, enhancing customer relationship management.`,
+            `QuickBooks Integration: Enabled seamless invoicing by integrating with QuickBooks, optimizing financial management.` ,
+            `Geolocation for Crew: Integrated map coordinates to display job locations, boosting crew efficiency by enabling them to tackle nearby tasks effectively.`],
+        tags: [
+            {
+                name: "Node.Js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "postgreSQL",
+                color: "green-text-gradient",
+            },
+            {
+                name: "React",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: lifetreewny,
+        source_code_link: "",
+        view_link:"https://www.lifetreewny.com/"
+    },
+
+    {
+        name: "The Indian Craft Store",
+        description:
+            [`Buyer-Seller Connection:
+Connects buyers and sellers of handmade art and craft products in a single platform.`,
+                `Security and Authentication:
+Offers authentication, login, and password reset features for a secure trading environment.`,
+                `Product Search and Filtering:
+Provides customers with easy product search and filtering options to find desired items.`,
+                `Multi-Tenant User Panel:
+Offers customers a user panel to view and track their order status across multiple orders.`,
+                `Seller Management Panel:
+Includes an admin panel that empowers sellers to manage their product listings efficiently.`,
+                `Email Notifications:
+Keeps customers and sellers informed with email notifications triggered by significant events, like order confirmation, shipping, and delivery updates.`
+            ],
+        tags: [
+            {
+                name: "React",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Mongodb",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Node.Js",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: theindiancraftstore,
+        source_code_link: "https://theindiancraftstore.netlify.app/",
+        view_link:"https://theindiancraftstore.netlify.app/"
     },
     {
-        name: "Node.Js",
-        color: "pink-text-gradient",
+        name: "Personal Portfolio 3D",
+        description:
+            [   `Tailored Showcase:
+
+Offers a curated selection of your finest work and accomplishments.`,
+                `MERN Stack Foundation:
+
+Built on the MERN stack (MongoDB, Express, React, Node.js) for a robust and dynamic web experience.`,
+                `Visual Journey:
+
+Presents a visual journey through your professional achievements, providing a comprehensive overview.`,
+                `Interactive 3D Elements:
+
+Utilizes Three.js to incorporate interactive 3D models and animations, enhancing project presentation.`,
+                `Enhanced User Experience:
+
+Creates a distinctive user experience by bringing projects to life with immersive visuals.`,
+                `Diverse Appeal:
+
+Appeals to a broad audience, whether interested in web development, 3D design, or emerging technologies.`
+            ],
+        tags: [
+            {
+                name: "React",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Node.Js",
+                color: "green-text-gradient",
+            },
+            {
+                name: "tailwindcss",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "Mongodb",
+                color: "orange-text-gradient",
+            },
+        ],
+        image: portfolio,
+        source_code_link: "https://github.com/",
+        view_link:"https://sarthakjain.works/"
     },
-    {   name: "Mongodb",
-        color: "orange-text-gradient",
+    {
+        name: "Scalable Word Counting ",
+        description:
+            [
+                `Hadoop-based Analysis:
+Utilizes Hadoop to analyze extensive text datasets.`,
+                `MapReduce Implementation:
+    Applies the MapReduce programming model to distribute processing tasks across a Hadoop cluster.`,
+                `Word Occurrence Count:
+    Counts occurrences of words in a provided text corpus.`,
+                `Noise Reduction Techniques:
+    Enhances accuracy by eliminating stop words and punctuation marks from the analysis.`,
+                `Improved Analysis Quality: leads to higher-quality analysis results.`],
+        tags: [
+            {
+                name: "Hadoop",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Java",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Map Reduce",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: mapreduce,
+        source_code_link: "https://github.com/",
+        view_link:"https://sarthakjain.works/"
     },
-],
-    image: mykindainsta,
-    source_code_link: "https://github.com/sarja830/Mykindainsta/",
-    view_link:"https://github.com/sarja830/Mykindainsta/"
-},
+    {
+        name: "Hollytics",
+        description:
+            [
+                ,`Hollywood Data Analysis Tool:
+
+Developed to analyze Hollywood data and extract meaningful insights about current industry trends.`
+                ,`Web-Based Platform:
+
+The project takes the form of a web-based platform for easy accessibility and interaction.`
+                ,`IMDb Dataset Integration:
+
+Utilizes an automated Python script to load data from the IMDb dataset into a PostgreSQL database.`
+                ,`Sophisticated SQL Queries:
+
+Leverages complex SQL queries to derive accurate and insightful information from the data.`
+
+
+            ],
+
+        tags: [
+            {
+                name: "PostgreSQL",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Python",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Bash",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: hollytics,
+        source_code_link: "https://github.com/",
+        view_link:"https://sarthakjain.works/"
+    },
+    {
+        name: "COVID combat",
+        description:
+            [
+                `COVID-19 Reporting Platform:
+
+Developed to aid in pandemic control by allowing users to report COVID-19 positive suspects in their vicinity`
+                ,`User-Generated Suspect Reports:
+Enables users to easily report potential COVID-19 cases, contributing to a collective effort for virus containment.`,
+                `District-Wise Data Aggregation:
+
+Organizes and presents reported cases on a district-wise basis, aiding local decision-making`,
+                `Early Detection Emphasis:
+
+Aims to identify potential COVID-19 cases promptly, supporting early detection strategies`
+            ],
+        tags: [
+            {
+                name: "HTML",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "CSS",
+                color: "green-text-gradient",
+            },
+            {
+                name: "JSP",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: corona,
+        source_code_link: "https://github.com/sarja830/COVID-combat",
+        view_link:"https://github.com/sarja830/COVID-combat"
+    },
+    {
+        name: "Mykindainsta",
+        description:
+            [
+                `MERN Stack Social Platform:
+
+Developed using the MERN stack for a comprehensive social media experience.`
+                ,`Personalized Connection:
+
+Offers users tailored connections and sharing based on individual interests.`
+                ,`Data Security with Encryption:
+
+Prioritizes security by using SHA-256 encryption to protect sensitive user data, including passwords.`
+                ,`User-Friendly Interaction:
+
+Provides a friendly interface for easy profile creation, post sharing, and interaction with others.`
+            ],
+        tags: [
+            {
+                name: "React",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Material UI",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Node.Js",
+                color: "pink-text-gradient",
+            },
+            {   name: "Mongodb",
+                color: "orange-text-gradient",
+            },
+        ],
+        image: mykindainsta,
+        source_code_link: "https://github.com/sarja830/Mykindainsta/",
+        view_link:"https://github.com/sarja830/Mykindainsta/"
+    },
 ];
 const journals =[{
     name: "Assessment and Prediction of PM2.5 in Delhi in View of Stubble Burn from Border States Using Collaborative Learning Model",
@@ -609,4 +892,4 @@ const contactViaEmail= 'mailto:sjain34@vuffalo.edu'
 const mediumBlog= "https://medium.com/@sarthjain830/different-views-of-a-binary-tree-left-view-and-right-view-of-a-binary-tree-with-breadth-first-de4b5675bd69"
 
 
-export { name ,services, mediumBlog, githubLink, contactViaEmail, frameworks, leetcodeProfile, others,languages, experiences, testimonials,journals,qualities, projects, resumeIframeviewLink, resumeDownloadLink };
+export { name ,services, awards, mediumBlog, githubLink, contactViaEmail, frameworks, leetcodeProfile, others,languages, experiences, testimonials,journals,qualities, projects, resumeIframeviewLink, resumeDownloadLink };
