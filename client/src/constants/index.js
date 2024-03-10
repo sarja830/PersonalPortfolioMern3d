@@ -55,10 +55,10 @@ export const navLinks = [
         id: "awards",
         title: "Awards",
     },
-    {
-        id: "testimonials",
-        title: "Feedbacks",
-    },
+    // {
+    //     id: "testimonials",
+    //     title: "Feedbacks",
+    // },
     {
         id: "resume",
         title: "Resume",
