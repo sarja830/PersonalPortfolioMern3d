@@ -18,7 +18,7 @@ https://icons8.com/profile/summary
 
 
 #DEPLOYMENT INSTRUCTIONS
-1. make the build of client (react app) via npm run build
+1. make the build of client (react app) via npm run build (npm install --legacy-peer-deps three)
 2. commit it to main branch
 3. make repo public
 3. log in to droplet via ssh 
@@ -29,7 +29,7 @@ password: sarthjain830
 
 ```
 4. clone the updated repo via http(the repo should be public)
-5. inside the project folder: pm2 start app.js
+5. inside the project folder: pm2 start "npm run start" --name portfolio
 6. pm2 list to see the deployment
 7. make repo pvt
 
