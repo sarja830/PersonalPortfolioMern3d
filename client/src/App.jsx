@@ -31,7 +31,7 @@ const App = () => {
         <Skills/>
         <Projects />
         <Research/>
-        <Awards/>
+        {/*<Awards/>*/}
         {/*<Feedbacks />*/}
         <Resume/>
         <div className='relative z-0'>
