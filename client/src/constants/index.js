@@ -145,11 +145,11 @@ const languages = [
 ];
 
 const others = [
-
     {
-        name: "Git",
-        icon: git,
+        name: "AWS Cloud",
+        icon: aws
     },
+
     {
         name: "MongoDB",
         icon: mongodb,
@@ -159,16 +159,12 @@ const others = [
         icon: postgres,
     },
     {
-        name: "Docker",
-        icon: docker,
+        name: "MySQL",
+        icon: mysql,
     },
     {
-        name: "Heroku",
-        icon: html,
-    },
-    {
-        name: "Jenkins",
-        icon: jenkins,
+        name: "Redis",
+        icon: redis
     },
     {
         name: "Kafka",
@@ -179,21 +175,30 @@ const others = [
         icon: rabbitmq,
     },
     {
+        name: "Docker",
+        icon: docker,
+    },
+    {
+        name: "Jenkins",
+        icon: jenkins,
+    },
+    {
+        name: "Git",
+        icon: git,
+    },
+    {
+        name: "Heroku",
+        icon: html,
+    },
+
+
+    {
         name: "Intellij",
         icon: intellij,
     },
+
+
     {
-        name: "AWS Cloud",
-        icon: aws
-    },
-{
-        name: "MySQL",
-        icon: mysql,
-    },
-{
-        name: "Redis",
-        icon: redis
-    },{
         name: "Nginx",
         icon: nginx
     },
