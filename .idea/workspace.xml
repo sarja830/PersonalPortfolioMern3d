@@ -5,18 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="989a0326-62cd-4635-8d9b-481c119c529b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/billingmodule.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/gshop.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/gshop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/portfolio.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Projects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Projects.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/constants/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2ONvo5b4O4PZ2n225llkYgcrr8R" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,6 +55,7 @@
       <recent name="$PROJECT_DIR$/client/src/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/assets" />
       <recent name="$PROJECT_DIR$/client/src/components" />
     </key>
   </component>
@@ -93,6 +105,8 @@
       <workItem from="1698202611934" duration="1533000" />
       <workItem from="1710042730919" duration="8730000" />
       <workItem from="1710772619746" duration="633000" />
+      <workItem from="1711068430540" duration="209000" />
+      <workItem from="1711146893280" duration="12456000" />
     </task>
     <servers />
   </component>
@@ -125,8 +139,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/constants/index.js</url>
-          <line>474</line>
-          <option name="timeStamp" value="3" />
+          <line>298</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

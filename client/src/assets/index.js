@@ -7,7 +7,7 @@ import github from "./github.png";
 import springer from "./springer.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
+import php from "./php.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 
@@ -46,7 +46,8 @@ import paytmmall from "./company/paytmmall.png";
 
 
 
-import portfolio from "./portfolio.jpeg";
+import portfolio from "./portfolio.png";
+import satisfly from "./web.jpeg";
 import theindiancraftstore from "./theindiancraftstore.jpeg";
 import lifetreewny from "./lifetreewny.png";
 import mapreduce from "./mapreduce.jpeg";
@@ -55,10 +56,16 @@ import hollytics from "./hollytics.jpeg";
 import mykindainsta from "./mykindainsta.jpeg";
 import journal from "./journal3.png";
 import gshop from "./gshop.png";
-
+import aws from "./tech/aws.png";
+import mysql from "./tech/mysql.png";
+import redis from "./tech/redis.svg";
+import billingmodule from "./billingmodule.png"
+import comingsoon from "./ComingSoon.jpg"
+import nginx from "./tech/nginnx.jpeg";
+import researchFoundation from "./researchfoundation.jpeg";
 
 export {
-  logo,
+  logo,aws,mysql,redis,nginx,billingmodule,comingsoon,researchFoundation,
   backend,
   creator,
   mobile,
@@ -95,7 +102,7 @@ export {
     rabbitmq,
     hadoop,
     spark,
-  postgres,
+  postgres,php,satisfly,
   theindiancraftstore,
     portfolio,
     mapreduce,

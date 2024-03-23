@@ -7,14 +7,14 @@ import {
     typescript,
     html,
     css,
-    reactjs,
+    reactjs, satisfly,
     nodejs,
     mongodb,
     git,
     docker,
     ramaiah,
     ub,
-    paytm,
+    paytm,researchFoundation,
     journal,
     paytmmall,
     spark,
@@ -24,9 +24,24 @@ import {
     vscode,
     c,
     java,
+    php,
     python,
-    jenkins, postgres, rabbitmq, springboot,
-    theindiancraftstore, portfolio, mapreduce, corona, hollytics, mykindainsta, lifetreewny, gshop
+    jenkins,
+    postgres,
+    rabbitmq,
+    springboot,
+    theindiancraftstore,
+    portfolio,
+    mapreduce,
+    corona,
+    hollytics,
+    mykindainsta,
+    lifetreewny,
+    gshop,
+    aws,
+    mysql,
+    redis,
+    nginx, billingmodule, comingsoon
 } from "../assets";
 import {faJenkins} from "@fortawesome/free-brands-svg-icons";
 
@@ -51,10 +66,10 @@ export const navLinks = [
         id: "research",
         title: "Research",
     },
-    {
-        id: "awards",
-        title: "Awards",
-    },
+    // {
+    //     id: "awards",
+    //     title: "Awards",
+    // },
     // {
     //     id: "testimonials",
     //     title: "Feedbacks",
@@ -121,7 +136,12 @@ const languages = [
     {
         name: "Bash",
         icon: html,
+    },
+    {
+        name: "PHP",
+        icon: php,
     }
+
 ];
 
 const others = [
@@ -163,8 +183,19 @@ const others = [
         icon: intellij,
     },
     {
-        name: "VS Code",
-        icon: vscode,
+        name: "AWS Cloud",
+        icon: aws
+    },
+{
+        name: "MySQL",
+        icon: mysql,
+    },
+{
+        name: "Redis",
+        icon: redis
+    },{
+        name: "Nginx",
+        icon: nginx
     },
 
 
@@ -199,62 +230,84 @@ const frameworks = [
 const githubLink ="https://github.com/sarja830";
 const experiences = [
     {
+        title:"Research Foundation, SUNY",
+        company_name: "Software Engineer Intern",
+        icon: researchFoundation,
+        iconBg: "white",
+        date: "June 2022 - Present",
+        points: [
+            "Built a multi-tenant SaaS platform utilizing Node.js, React, Redux, PostgreSQL, and Redis cache featuring price negotiations helping service-based businesses easily transition their ventures online",
+            "Integrated order tracking, proposal management, and efficient communication channels within individual instances",
+            "Enforced authentication and role-based authorization to bolster platform security using JWT tokens",
+            "Onboarded microservices on CI/CD pipeline using Github Actions, boosting efficiency by 84%"
+        ],
+
+        link:"https://www.rfsuny.org/",
+        Project : "Gshop",
+        Date:"June 05, 2023 - Present"
+    },
+    {
         title: "University at Buffalo, SUNY",
         company_name: "Master's in Computer Science & Engineering",
-        subexperience :[
-            {
-                title:"Research Foundation, SUNY",
-                company_name: "Graduate Research Assistant",
-                icon: paytm,
-                iconBg: "white",
-                date: "June 2022 - Present",
-                points: [
-                    ` Building a SaaS product which empowers traditional product-based businesses and nontraditional service-based enterprises to efficiently transition their ventures online. `,
-                    `It enables price negotiation, order management, and proposal tracking for customers and owners`,
-                    `Developed utilizing the multitenant architecture which adheres to the separation of concern design principle.`
-
-                ],
-                link:"https://www.rfsuny.org/",
-                Project : "Gshop",
-                Date:"June 05, 2023 - Present"
-            }
-        ],
+        // subexperience :[
+        //     {
+        //         title:"Research Foundation, SUNY",
+        //         company_name: "Graduate Research Assistant",
+        //         icon: paytm,
+        //         iconBg: "white",
+        //         date: "June 2022 - Present",
+        //         points: [
+        //             "Built a multi-tenant SaaS platform utilizing Node.js, React, Redux, PostgreSQL, and Redis cache featuring price negotiations helping service-based businesses easily transition their ventures online",
+        //             "Integrated order tracking, proposal management, and efficient communication channels within individual instances",
+        //             "Enforced authentication and role-based authorization to bolster platform security using JWT tokens",
+        //             "Onboarded microservices on CI/CD pipeline using Github Actions, boosting efficiency by 84%"
+        //         ],
+        //
+        //         link:"https://www.rfsuny.org/",
+        //         Project : "Gshop",
+        //         Date:"June 05, 2023 - Present"
+        //     }
+        // ],
         icon: ub,
         iconBg: "white",
-        date: "August 2022 - Present",
+        date: "August 2022 - Dec 2023",
         points: [
+            `CGPA: 3.8/4.0`,
+            `Winner of M&T Winter Coding Challenge 2024`,
+            `2nd place winner in Innovate Our Ecosystem Hackathon2nd place winner in Innovate Our Ecosystem Hackathon
+Issued by TechBuffalo and UB Blackstone Launchpad`
         ],
         viewTranscript:"https://drive.google.com/file/d/1A-b2aBjl7FKhF8nGudHTy2wOIq_Q7M90/view?usp=sharing",
         transcriptLink:"https://drive.google.com/uc?export=download&id=1A-b2aBjl7FKhF8nGudHTy2wOIq_Q7M90",
         link:"https://www.buffalo.edu/"
     },
+
     {
         title: "Paytm",
-        company_name: "Software Development Engineer",
+        company_name: "Software Engineer",
         icon: paytm,
         iconBg: "white",
-        date: "June 2021 - Aug 2022",
+        date: "Jan 2021 - Aug 2022",
         points: [
-            " Rewriting the existing PHP code base in Spring Boot and Node.Js for making the system more robust and scalable for Paytm loan collection and automation platform",
-            "Designed and developed asynchronous APIs for bulk managing of products by the sellers of Paytm ecommerce mall",
-            "Automated CI/CD pipelines to deploy Docker Image to Kubernetes Cluster" ,
-            "Implemented a logging framework for improved error handling and code debugging as part of code hygiene project"
-
+            "Developed asynchronous APIs for event-driven microservices architecture for bulk managing of products by sellers of the ecommerce platform at Paytm. Utilized RabbitMQ, Node.js, and express.js to accomplish this milestone",
+            "Designed RESTful API wrappers for product catalog, implemented caching and pagination that reduced API response time, attaining p99 and p95 times under 90ms and 78ms respectively, down from 150ms and 120ms.",
+            "Automated CI/CD pipelines to deploy Docker images to the Kubernetes cluster through Jenkins",
+            "Engineered a scalable microservice using Spring Boot and Kafka to facilitate automated notification capabilities within Paytm Creditmate achieving a success rate of about 99.4%"
         ],
         link:"https://paytm.com/"
     },
-    {
-        title: "Paytm Mall",
-        company_name: "Software Developer intern",
-
-        icon: paytmmall,
-        iconBg: "white",
-        date: "January 2021 - June 2021",
-        points: [
-            "Responsible for creating backend APIs for upcoming automated notification features in Paytm ecommerce mall"
-        ],
-        link:"https://paytmmall.com/"
-    },
+    // {
+    //     title: "Paytm Mall",
+    //     company_name: "Software Developer intern",
+    //
+    //     icon: paytmmall,
+    //     iconBg: "white",
+    //     date: "January 2021 - June 2021",
+    //     points: [
+    //         "Responsible for creating backend APIs for upcoming automated notification features in Paytm ecommerce mall"
+    //     ],
+    //     link:"https://paytmmall.com/"
+    // },
     {
         title: "Ramaiah Institute of Technology, VTU",
         company_name: "Bachelor of Engineering in Information Science and Engineering",
@@ -262,7 +315,8 @@ const experiences = [
         iconBg: "white",
         date: "June 2017 - July 2021",
         points: [
-
+            `CGPA: 8.7/10.0`,
+            `Awarded an undergraduate academic merit-based scholarship by the Government of Madhya Pradesh, highlighting my exceptional academic achievements and dedication to pursuing higher education`
         ],
         viewTranscript:"https://drive.google.com/file/d/1xkT4siExyJVE5oMJVn7fCq_xq7EByu3T/view?usp=sharing",
         transcriptLink: "https://drive.google.com/uc?export=download&id=1xkT4siExyJVE5oMJVn7fCq_xq7EByu3T",
@@ -304,12 +358,105 @@ const name = {
 }
 const qualities =
     ["Avid Learner","Curious","Enthusiastic","Hardworking"]
-const projects = [
+const projects =[
     {
-        name: "Gshop",
+        name: "Byte me - Blogging site",
+        upcoming: true,
+        inprogress: true,
+
+        description:  [
+            "An innovative blogging platform: a secure, multi-tenant solution designed to cater to bloggers of all interests and expertise levels.Engage in lively discussions with interactive comment threads, replies, and voting functionalities, fostering a dynamic blogging community.",
+            "Versatile blog application supporting a wide range of categories",
+            "Implemented Spring Security with OAuth 2 for secure authentication and authorization with scopes and roles",
+            "Operates as a multi-tenant platform, facilitating blogging across various domains",
+            "Features interactive discussions with comment, reply, and voting capabilities",
+            "Utilizes ElasticSearch for fast and efficient search functionality",
+            "Employs MongoDB for effective data storage and management, and PostgreSQL for user and blog management"
+        ],
+        tags: [
+            {
+                name: "Spring Boot",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Spring Security",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "React",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "Tailwind CSS",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "MongoDb",
+                color: "orange-text-gradient",
+            },
+            {
+                name: "PostgreSQL",
+                color: "orange-text-gradient",
+            },
+            {
+                name: "Redis",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Elastic Search",
+                color: "green-text-gradient",
+            },
+        ],
+        image: comingsoon,
+        // source_code_link: "",
+        // view_link: ""
+    },
+    {
+        name: "Gshop - Billing Module",
+        upcoming: true,
+        inprogress: true,
+
+        description:  [
+            `A comprehensive solution integrating automated billing, detailed business metrics visualization,serving as centralized control panel for managing businesses on the platform, and robust OAuth 2.0 security measures for seamless platform management.`,
+            "Automated Cron Job: A scheduled task that retrieves metrics from the Redis server and updates them to the relational database daily.",
+            "Material UI Dashboard: A user-friendly interface presenting comprehensive metrics for each business.",
+            "Centralized Control Panel: An integrated platform for managing and halting business services.",
+            "Enhanced Security: Implementation of OAuth 2.0 protocol to prevent unauthorized access to the platform."
+        ],
+        tags: [
+            {
+                name: "Node.Js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "PostgreSQL",
+                color: "orange-text-gradient",
+            },
+            {
+                name: "React",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "Material UI",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "Redis",
+                color: "green-text-gradient",
+            },
+        ],
+        image: billingmodule,
+        // source_code_link: "",
+        // view_link: "http://ec2-3-149-230-93.us-east-2.compute.amazonaws.com/"
+    },
+    {
+        name: "Gshop - SaaS",
+        upcoming: true,
+        live: true,
+        inprogress: true,
         description: [
 
-            `Empowerment: Designed to empower both traditional product-based businesses and nontraditional service-based enterprises to transition effectively to the online space.`,
+            `A SaaS platform designed to empower both product-based and service-based enterprises to transition effectively to the online space. The platform offers a set of features designed specifically for service-based businesses to serve their specific requirements.`,
 
             `Price Negotiation: The platform provides tools for businesses to engage in virtual price negotiations with their customers or clients, facilitating agreement on product or service pricing.`,
 
@@ -326,20 +473,40 @@ const projects = [
                 color: "blue-text-gradient",
             },
             {
-                name: "postgreSQL",
-                color: "green-text-gradient",
+                name: "PostgreSQL",
+                color: "orange-text-gradient",
             },
             {
                 name: "React",
                 color: "pink-text-gradient",
             },
+
+            {
+                name: "Redis",
+                color: "green-text-gradient",
+            },
+            {
+                name: "AWS",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Github Actions",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Tailwind CSS",
+                color: "pink-text-gradient",
+            },
         ],
         image: gshop,
-        source_code_link: "",
-        view_link:""
+        // source_code_link: "",
+        view_link: "http://ec2-3-149-230-93.us-east-2.compute.amazonaws.com/"
     },
     {
         name: "Lifetree WNY Services",
+
+        live: true,
+
         description: [`Efficient Operations: Developed a web app to streamline daily business tasks and improve operational efficiency.`,
             ` Customer Management: Implemented a system to track proposals and manage potential customers, enhancing customer relationship management.`,
             `QuickBooks Integration: Enabled seamless invoicing by integrating with QuickBooks, optimizing financial management.` ,
@@ -351,7 +518,7 @@ const projects = [
             },
             {
                 name: "postgreSQL",
-                color: "green-text-gradient",
+                color: "orange-text-gradient",
             },
             {
                 name: "React",
@@ -359,12 +526,14 @@ const projects = [
             },
         ],
         image: lifetreewny,
-        source_code_link: "",
+        // source_code_link: "",
         view_link:"https://www.lifetreewny.com/"
     },
-
     {
-        name: "The Indian Craft Store",
+        name: "Indian Craft Store",
+
+        live: true,
+
         description:
             [`Buyer-Seller Connection:
 Connects buyers and sellers of handmade art and craft products in a single platform.`,
@@ -382,7 +551,7 @@ Keeps customers and sellers informed with email notifications triggered by signi
         tags: [
             {
                 name: "React",
-                color: "blue-text-gradient",
+                color: "pink-text-gradient",
             },
             {
                 name: "Mongodb",
@@ -390,7 +559,7 @@ Keeps customers and sellers informed with email notifications triggered by signi
             },
             {
                 name: "Node.Js",
-                color: "pink-text-gradient",
+                color: "blue-text-gradient",
             },
         ],
         image: theindiancraftstore,
@@ -399,6 +568,9 @@ Keeps customers and sellers informed with email notifications triggered by signi
     },
     {
         name: "Personal Portfolio 3D",
+
+        live: true,
+
         description:
             [   `Tailored Showcase:
 
@@ -421,12 +593,12 @@ Appeals to a broad audience, whether interested in web development, 3D design, o
             ],
         tags: [
             {
-                name: "React",
+                name: "Node.Js",
                 color: "blue-text-gradient",
             },
             {
-                name: "Node.Js",
-                color: "green-text-gradient",
+                name: "React",
+                color: "pink-text-gradient",
             },
             {
                 name: "tailwindcss",
@@ -438,11 +610,12 @@ Appeals to a broad audience, whether interested in web development, 3D design, o
             },
         ],
         image: portfolio,
-        source_code_link: "https://github.com/",
-        view_link:"https://sarthakjain.works/"
+        // source_code_link: "https://github.com/",
+        view_link:"https://sarthakjain.me/"
     },
     {
         name: "Scalable Word Counting ",
+        archived: true,
         description:
             [
                 `Hadoop-based Analysis:
@@ -469,14 +642,15 @@ Utilizes Hadoop to analyze extensive text datasets.`,
             },
         ],
         image: mapreduce,
-        source_code_link: "https://github.com/",
-        view_link:"https://sarthakjain.works/"
+        source_code_link: "https://github.com/sarja830/MapReduceWordCount",
+        view_link:"https://github.com/sarja830/MapReduceWordCount"
     },
     {
         name: "Hollytics",
+        archived: true,
         description:
             [
-                ,`Hollywood Data Analysis Tool:
+                `Hollywood Data Analysis Tool:
 
 Developed to analyze Hollywood data and extract meaningful insights about current industry trends.`
                 ,`Web-Based Platform:
@@ -495,7 +669,7 @@ Leverages complex SQL queries to derive accurate and insightful information from
         tags: [
             {
                 name: "PostgreSQL",
-                color: "blue-text-gradient",
+                color: "orange-text-gradient",
             },
             {
                 name: "Python",
@@ -507,11 +681,57 @@ Leverages complex SQL queries to derive accurate and insightful information from
             },
         ],
         image: hollytics,
-        source_code_link: "https://github.com/",
-        view_link:"https://sarthakjain.works/"
+        source_code_link: "https://github.com/sarja830/Hollytics",
+        view_link:"https://github.com/sarja830/Hollytics"
+    },
+    {
+        name: "Satisfly",
+        archived: true,
+        description:
+            [
+                `As a part of a dynamic and collaborative team, I spearheaded the "Enhancing Airline Passenger Satisfaction" project, which aimed to leverage data and machine learning to elevate the passenger experience in the airline industry. This multifaceted project spanned three phases:`,
+
+                `Phase 1 - Data Analysis and Model Training:
+    - Conducted in-depth analysis of the US Airline Passenger Satisfaction Dataset to uncover insights.
+- Trained a range of machine learning models, including Random Forest Classifier, Linear Support Vector Machine, Logistic Regression, Naive Bayes, and XGBoost.
+- The goal was to pinpoint the services that most significantly impact passenger satisfaction.`,
+
+                `Phase 2 - Interactive Web App Development:
+    - Designed and developed an interactive web application that empowers both passengers and airlines.
+- Passengers can enter their ratings for various airline services, enabling them to forecast areas needing improvement.
+- Airlines can access actionable recommendations for enhancing customer satisfaction.`,
+
+                `Phase 3 - Real-time Prediction:
+    - Applied the machine learning models from Phase 1 to predict passenger satisfaction in real-time.
+- Integrated Logistic Regression as the default model for real-world predictions, with the added flexibility for users to choose specific trained models.
+- Utilized an optimized model loading process to reduce processing time.`,
+            ],
+
+        tags: [
+            {
+                name: "Machine Learning",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Python",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Streamlit",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "Git",
+                color: "yellow-text-gradient",
+            },
+        ],
+        image: satisfly,
+        source_code_link: "https://github.com/sarja830/SatisFly-Analyzing-Air-Travel-Bliss",
+        view_link:"https://github.com/sarja830/SatisFly-Analyzing-Air-Travel-Bliss",
     },
     {
         name: "COVID combat",
+        archived: true,
         description:
             [
                 `COVID-19 Reporting Platform:
@@ -539,6 +759,13 @@ Aims to identify potential COVID-19 cases promptly, supporting early detection s
                 name: "JSP",
                 color: "pink-text-gradient",
             },
+            {
+                name: "Mysql",
+                color: "orange-text-gradient",
+            },{
+                name: "Java",
+                color: "sky-text-gradient",
+            },
         ],
         image: corona,
         source_code_link: "https://github.com/sarja830/COVID-combat",
@@ -546,6 +773,7 @@ Aims to identify potential COVID-19 cases promptly, supporting early detection s
     },
     {
         name: "Mykindainsta",
+        archived: true,
         description:
             [
                 `MERN Stack Social Platform:
@@ -572,7 +800,7 @@ Provides a friendly interface for easy profile creation, post sharing, and inter
             },
             {
                 name: "Node.Js",
-                color: "pink-text-gradient",
+                color: "blue-text-gradient",
             },
             {   name: "Mongodb",
                 color: "orange-text-gradient",
@@ -584,283 +812,7 @@ Provides a friendly interface for easy profile creation, post sharing, and inter
     },
 ];
 const awards = [
-    {
-        name: "Gshop",
-        description: [
 
-            `Empowerment: Designed to empower both traditional product-based businesses and nontraditional service-based enterprises to transition effectively to the online space.`,
-
-            `Price Negotiation: The platform provides tools for businesses to engage in virtual price negotiations with their customers or clients, facilitating agreement on product or service pricing.`,
-
-            `Order Management: Seamless order management is a key focus, ensuring efficient processes for order placement, tracking, and fulfillment, benefiting both customers and business owners.`,
-
-            `Proposal Tracking: For service-based businesses features to track proposals, facilitating efficient communication.`,
-
-            `Multitenant Architecture: Allowing a single instance of the software to serve multiple customers.`,
-
-        ],
-        tags: [
-            {
-                name: "Node.Js",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "postgreSQL",
-                color: "green-text-gradient",
-            },
-            {
-                name: "React",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: gshop,
-        source_code_link: "",
-        view_link:""
-    },
-    {
-        name: "Lifetree WNY Services",
-        description: [`Efficient Operations: Developed a web app to streamline daily business tasks and improve operational efficiency.`,
-            ` Customer Management: Implemented a system to track proposals and manage potential customers, enhancing customer relationship management.`,
-            `QuickBooks Integration: Enabled seamless invoicing by integrating with QuickBooks, optimizing financial management.` ,
-            `Geolocation for Crew: Integrated map coordinates to display job locations, boosting crew efficiency by enabling them to tackle nearby tasks effectively.`],
-        tags: [
-            {
-                name: "Node.Js",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "postgreSQL",
-                color: "green-text-gradient",
-            },
-            {
-                name: "React",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: lifetreewny,
-        source_code_link: "",
-        view_link:"https://www.lifetreewny.com/"
-    },
-
-    {
-        name: "The Indian Craft Store",
-        description:
-            [`Buyer-Seller Connection:
-Connects buyers and sellers of handmade art and craft products in a single platform.`,
-                `Security and Authentication:
-Offers authentication, login, and password reset features for a secure trading environment.`,
-                `Product Search and Filtering:
-Provides customers with easy product search and filtering options to find desired items.`,
-                `Multi-Tenant User Panel:
-Offers customers a user panel to view and track their order status across multiple orders.`,
-                `Seller Management Panel:
-Includes an admin panel that empowers sellers to manage their product listings efficiently.`,
-                `Email Notifications:
-Keeps customers and sellers informed with email notifications triggered by significant events, like order confirmation, shipping, and delivery updates.`
-            ],
-        tags: [
-            {
-                name: "React",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Mongodb",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Node.Js",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: theindiancraftstore,
-        source_code_link: "https://theindiancraftstore.netlify.app/",
-        view_link:"https://theindiancraftstore.netlify.app/"
-    },
-    {
-        name: "Personal Portfolio 3D",
-        description:
-            [   `Tailored Showcase:
-
-Offers a curated selection of your finest work and accomplishments.`,
-                `MERN Stack Foundation:
-
-Built on the MERN stack (MongoDB, Express, React, Node.js) for a robust and dynamic web experience.`,
-                `Visual Journey:
-
-Presents a visual journey through your professional achievements, providing a comprehensive overview.`,
-                `Interactive 3D Elements:
-
-Utilizes Three.js to incorporate interactive 3D models and animations, enhancing project presentation.`,
-                `Enhanced User Experience:
-
-Creates a distinctive user experience by bringing projects to life with immersive visuals.`,
-                `Diverse Appeal:
-
-Appeals to a broad audience, whether interested in web development, 3D design, or emerging technologies.`
-            ],
-        tags: [
-            {
-                name: "React",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Node.Js",
-                color: "green-text-gradient",
-            },
-            {
-                name: "tailwindcss",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "Mongodb",
-                color: "orange-text-gradient",
-            },
-        ],
-        image: portfolio,
-        source_code_link: "https://github.com/",
-        view_link:"https://sarthakjain.works/"
-    },
-    {
-        name: "Scalable Word Counting ",
-        description:
-            [
-                `Hadoop-based Analysis:
-Utilizes Hadoop to analyze extensive text datasets.`,
-                `MapReduce Implementation:
-    Applies the MapReduce programming model to distribute processing tasks across a Hadoop cluster.`,
-                `Word Occurrence Count:
-    Counts occurrences of words in a provided text corpus.`,
-                `Noise Reduction Techniques:
-    Enhances accuracy by eliminating stop words and punctuation marks from the analysis.`,
-                `Improved Analysis Quality: leads to higher-quality analysis results.`],
-        tags: [
-            {
-                name: "Hadoop",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Java",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Map Reduce",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: mapreduce,
-        source_code_link: "https://github.com/",
-        view_link:"https://sarthakjain.works/"
-    },
-    {
-        name: "Hollytics",
-        description:
-            [
-                ,`Hollywood Data Analysis Tool:
-
-Developed to analyze Hollywood data and extract meaningful insights about current industry trends.`
-                ,`Web-Based Platform:
-
-The project takes the form of a web-based platform for easy accessibility and interaction.`
-                ,`IMDb Dataset Integration:
-
-Utilizes an automated Python script to load data from the IMDb dataset into a PostgreSQL database.`
-                ,`Sophisticated SQL Queries:
-
-Leverages complex SQL queries to derive accurate and insightful information from the data.`
-
-
-            ],
-
-        tags: [
-            {
-                name: "PostgreSQL",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Python",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Bash",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: hollytics,
-        source_code_link: "https://github.com/",
-        view_link:"https://sarthakjain.works/"
-    },
-    {
-        name: "COVID combat",
-        description:
-            [
-                `COVID-19 Reporting Platform:
-
-Developed to aid in pandemic control by allowing users to report COVID-19 positive suspects in their vicinity`
-                ,`User-Generated Suspect Reports:
-Enables users to easily report potential COVID-19 cases, contributing to a collective effort for virus containment.`,
-                `District-Wise Data Aggregation:
-
-Organizes and presents reported cases on a district-wise basis, aiding local decision-making`,
-                `Early Detection Emphasis:
-
-Aims to identify potential COVID-19 cases promptly, supporting early detection strategies`
-            ],
-        tags: [
-            {
-                name: "HTML",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "CSS",
-                color: "green-text-gradient",
-            },
-            {
-                name: "JSP",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: corona,
-        source_code_link: "https://github.com/sarja830/COVID-combat",
-        view_link:"https://github.com/sarja830/COVID-combat"
-    },
-    {
-        name: "Mykindainsta",
-        description:
-            [
-                `MERN Stack Social Platform:
-
-Developed using the MERN stack for a comprehensive social media experience.`
-                ,`Personalized Connection:
-
-Offers users tailored connections and sharing based on individual interests.`
-                ,`Data Security with Encryption:
-
-Prioritizes security by using SHA-256 encryption to protect sensitive user data, including passwords.`
-                ,`User-Friendly Interaction:
-
-Provides a friendly interface for easy profile creation, post sharing, and interaction with others.`
-            ],
-        tags: [
-            {
-                name: "React",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Material UI",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Node.Js",
-                color: "pink-text-gradient",
-            },
-            {   name: "Mongodb",
-                color: "orange-text-gradient",
-            },
-        ],
-        image: mykindainsta,
-        source_code_link: "https://github.com/sarja830/Mykindainsta/",
-        view_link:"https://github.com/sarja830/Mykindainsta/"
-    },
 ];
 const journals =[{
     name: "Assessment and Prediction of PM2.5 in Delhi in View of Stubble Burn from Border States Using Collaborative Learning Model",
