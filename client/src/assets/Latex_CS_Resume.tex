@@ -1,0 +1,184 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+%------------------------------------------------------------------------------
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Grace Hopper} \\ \vspace{1pt}
+    \small (919) 123-1234 $|$ \href{mailto:gracehopper123@gmail.com}{\underline{gracehopper123@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/grace-hopper-123}{\underline{linkedin.com/in/grace-hopper-123}}
+    $|$ 
+    \href{https://github.com/gracehopper123}{\underline{github.com/gracehopper123}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of North Carolina at Chapel Hill}{Aug. 2021 -- May 2025}
+      {B.S. Computer Science, Crocheting minor $|$ \textbf{GPA}: 4.0/4.0}
+      {Chapel Hill, NC}
+      \resumeItemListStart
+        \resumeItem{\textbf{Courses}: Computer Organization, Data Structures, Foundations of Programming, Algorithms \& Analysis}
+        \resumeItem{\textbf{Honors}: Dean's List, Honors Carolina}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+%----------- TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    {\textbf{Languages}: Java, Python (pandas, matplotlib, plotly, scipy), C\#, C++}\\
+    {\textbf{Technologies}: Node.js, React.js, Docker, PyTorch}\\
+    {\textbf{Tools}: Tableau, Jira, Figma}}}
+\end{itemize}
+ 
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\textbf{Software Test Engineer Intern}}{May 2023 -- Aug. 2023}
+      {Qualtrics}{Seattle, WA}
+      \resumeItemListStart
+        \resumeItem{Implemented a script in Python to automate project creation with static data on tests, speeding up software releases and \textbf{improving test times across 3 teams by nearly 400\%}}
+        \resumeItem{Reviewed design docs and prototypes of an upcoming feature release to \textbf{create nearly 50 test cases}, performed manual testing and \textbf{triaged 15 bugs} with engineers in an Agile environment}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\textbf{Undergraduate Teaching Assistant}}{Aug. 2022 -- Dec. 2023}
+      {UNC Department of Computer Science}{Chapel Hill, NC}
+      \resumeItemListStart
+      \resumeItem{Mentored \textbf{over 275} students enrolled in Introduction to Programming, explaining challenging concepts and fundamental programming knowledge to \textbf{both} Computer Science and non-technical majors}
+        \resumeItem{Coordinated office hours and lesson plans in conjunction with \textbf{6 other teaching assistants} in order to ensure widespread availability and quickly return tests and assignments to students}       
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+ % -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading for promotions/multiple levels of the same position under the same company
+%-------------------------------------------     
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart         
+    \resumeProjectHeading
+    {\textbf{RESTroom Yelp} $|$ \emph{UNC PearlHacks}} {Feb. 2023}
+      \resumeItemListStart
+        \resumeItem{Collaborated with a team of 4 and developed a fully functional web application with a dynamic \textbf{JavaScript}-based front-end, an \textbf{AJAX}-based communication with a \textbf{RESTful server-side API}, a relational database that stores back-end application state, and an \textbf{ORM layer} to access data in the database}
+        \resumeItem{Awarded the Most Creative Award by \textbf{Appian} and Best Innovation in Collaboration Award by \textbf{Red Ventures}}
+      \resumeItemListEnd
+    
+    \resumeProjectHeading
+      {\textbf{Discover the New World} $|$ \emph{Console Mini-Game}}{May 2022}
+      \resumeItemListStart
+        \resumeItem{Created a mini-game in \textbf{C\#} for Xbox with immersive music and sound effects, and designed the user interface using \textbf{Figma}}
+        \resumeItem{Generated a random map based on a 2D array with multiple pages for the user to traverse on their west}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------LEADERSHIP-----------
+\section{Leadership}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+      {\textbf{Director of Promotion}}{Apr 2023 - Present}
+      {UNC PearlHacks}{Chapel Hill, NC}
+        \resumeItemListStart
+            \resumeItem{Managing and delegating the marketing branch to establish PearlHacks' mission to empower women and gender non-conforming beginners in tech}
+            \resumeItem{Developing and executing the marketing strategy through social media, design, and in-person campaigns, which have \textbf{fostered 1500+ registrations} with a \textbf{60\% turnout rate} from representation from \textbf{30+ countries}}
+            \resumeItem{Partnered with \textbf{3 other branches} and \textbf{4 other chair members} to discuss how the marketing strategy plays into the function of the organization as a whole}
+         \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}

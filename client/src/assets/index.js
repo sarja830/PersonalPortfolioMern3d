@@ -47,6 +47,7 @@ import paytmmall from "./company/paytmmall.png";
 
 
 import portfolio from "./portfolio.png";
+import neuralshift from "./neuralshift.png";
 import satisfly from "./web.jpeg";
 import theindiancraftstore from "./theindiancraftstore.jpeg";
 import lifetreewny from "./lifetreewny.png";
@@ -106,5 +107,5 @@ export {
   theindiancraftstore,
     portfolio,
     mapreduce,
-    corona, hollytics, mykindainsta, lifetreewny, gshop
+    corona, hollytics, mykindainsta, lifetreewny, gshop, neuralshift
 };

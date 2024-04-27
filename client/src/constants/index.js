@@ -41,7 +41,7 @@ import {
     aws,
     mysql,
     redis,
-    nginx, billingmodule, comingsoon
+    nginx, billingmodule, comingsoon, neuralshift
 } from "../assets";
 import {faJenkins} from "@fortawesome/free-brands-svg-icons";
 
@@ -230,13 +230,11 @@ const frameworks = [
 
 ];
 
-
-
 const githubLink ="https://github.com/sarja830";
 const experiences = [
     {
         title:"Research Foundation, SUNY",
-        company_name: "Software Engineer Intern",
+        company_name: "Software Engineer",
         icon: researchFoundation,
         iconBg: "white",
         date: "June 2022 - Present",
@@ -244,7 +242,9 @@ const experiences = [
             "Built a multi-tenant SaaS platform utilizing Node.js, React, Redux, PostgreSQL, and Redis cache featuring price negotiations helping service-based businesses easily transition their ventures online",
             "Integrated order tracking, proposal management, and efficient communication channels within individual instances",
             "Enforced authentication and role-based authorization to bolster platform security using JWT tokens",
-            "Onboarded microservices on CI/CD pipeline using Github Actions, boosting efficiency by 84%"
+            "Onboarded microservices on CI/CD pipeline using Github Actions, boosting efficiency by 84%",
+            "Dockerized Applications to deploy using Kubernetes architecture",
+            "Spearheaded the development of a centralized billing module for metering businesses and managing them on the platform bringing about a significant 80% decrease in manual workload",
         ],
 
         link:"https://www.rfsuny.org/",
@@ -365,10 +365,10 @@ const qualities =
     ["Avid Learner","Curious","Enthusiastic","Hardworking"]
 const projects =[
     {
-        name: "Byte me - Blogging site",
-        upcoming: true,
-        inprogress: true,
-
+        name: "Neural Shift",
+        // upcoming: true,
+        // inprogress: true,
+        live: true,
         description:  [
             "An innovative blogging platform: a secure, multi-tenant solution designed to cater to bloggers of all interests and expertise levels.Engage in lively discussions with interactive comment threads, replies, and voting functionalities, fostering a dynamic blogging community.",
             "Versatile blog application supporting a wide range of categories",
@@ -412,9 +412,10 @@ const projects =[
                 color: "green-text-gradient",
             },
         ],
+        // image: comingsoon,
         image: comingsoon,
         // source_code_link: "",
-        // view_link: ""
+        view_link: "https://neuralshift.tech/"
     },
     {
         name: "Gshop - Billing Module",

@@ -19,7 +19,7 @@ import {github} from "../assets/index.js";
 import {contactViaEmail, githubLink, leetcodeProfile, mediumBlog} from "../constants/index.js";
 library.add(faTwitter, faFacebook, faPinterest, faGithub, faWhatsapp,faLinkedin, faInstagram,faLinkedinIn, faHouse, faUser)
 
-// fab fa-twitter"
+// fab fa-twitter
 // fab fa-facebook
 // fab fa-dribbble
 // fab fa-github
