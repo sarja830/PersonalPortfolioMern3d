@@ -370,7 +370,7 @@ const projects =[
         // inprogress: true,
         live: true,
         description:  [
-            "An innovative blogging platform: a secure, multi-tenant solution designed to cater to bloggers of all interests and expertise levels.Engage in lively discussions with interactive comment threads, replies, and voting functionalities, fostering a dynamic blogging community.",
+            "An innovative blogging platform: a secure, solution designed cater to bloggers of all interests and expertise levels.Engage in lively discussions with interactive comment threads, replies, and voting functionalities, fostering a dynamic blogging community.",
             "Versatile blog application supporting a wide range of categories",
             "Implemented Spring Security with OAuth 2 for secure authentication and authorization with scopes and roles",
             "Operates as a multi-tenant platform, facilitating blogging across various domains",
@@ -404,7 +404,7 @@ const projects =[
                 color: "orange-text-gradient",
             },
             {
-                name: "Redis",
+                name: "AWS S3",
                 color: "green-text-gradient",
             },
             {
@@ -412,8 +412,8 @@ const projects =[
                 color: "green-text-gradient",
             },
         ],
-        // image: comingsoon,
-        image: comingsoon,
+        // image: n,
+        image: neuralshift,
         // source_code_link: "",
         view_link: "https://neuralshift.tech/"
     },

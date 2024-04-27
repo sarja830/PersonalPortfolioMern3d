@@ -63,7 +63,7 @@ const Footer = () => {
                                        target="_blank"
                                        className=" text-github-regular shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-flex"
                                        type="button">
-                                        <FontAwesomeIcon icon="fa-brands fa-github" className={`hover:bg-slate-800  p-2`} size={"2x"} />
+                                        <FontAwesomeIcon icon="fa-brands fa-github" className={`hover:bg-orange-600  p-2`} size={"2x"} />
                                         {/*<FontAwesomeIcon icon="fa-brands fa-github" style={{color: "#172a4a",}} />   size={"2x"} />*/}
                                     </a>
 
@@ -91,16 +91,16 @@ const Footer = () => {
                                             <a
                                                 href=""
                                                 target="_blank"
-                                                className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">
+                                                className="text-blueGray-500 hover:hover:text-orange-400 block pb-2 text-sm">
 
                                             </a>
-                                            <a href=""
+                                            <a href="https://neuralshift.tech/"
                                                target="_blank"
-                                               className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm"> Personal Blog (coming soon)</a>
+                                               className="text-blueGray-500 hover:hover:text-orange-400 block pb-2 text-sm"> Personal Blog -Neural Shift</a>
 
                                             <a
                                                 href={githubLink} target="_blank"
-                                                className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">Github</a>
+                                                className="text-blueGray-500 hover:text-orange-400 block pb-2 text-sm">Github</a>
 
                                             <a
                                                 href={mediumBlog}
@@ -114,12 +114,12 @@ const Footer = () => {
                                         <ul className="list-unstyled">
                                             <a
                                                 href={leetcodeProfile} target="_blank"
-                                                className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">
+                                                className="text-blueGray-500 hover:hover:text-orange-400 block pb-2 text-sm">
                                                 Leetcode Profile
                                             </a>
                                             <a href={contactViaEmail}
                                                target="_blank"
-                                               className="text-blueGray-500 hover:text-blueGray-700 block pb-2 text-sm">
+                                               className="text-blueGray-500 hover:hover:text-orange-400 block pb-2 text-sm">
                                                 Contact via email
                                             </a>
                                             <a
