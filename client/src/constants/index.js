@@ -541,7 +541,7 @@ const projects =[
     {
         name: "Indian Craft Store",
 
-        archived: true,
+        live: true,
 
         description:
             [`Buyer-Seller Connection:
@@ -573,7 +573,7 @@ Keeps customers and sellers informed with email notifications triggered by signi
         ],
         image: theindiancraftstore,
         source_code_link: "https://github.com/sarja830/CocoBerryStore",
-        view_link:"https://github.com/sarja830/CocoBerryStore"
+        view_link:"https://theindiancraftstore.netlify.app/"
     },
     {
         name: "Personal Portfolio 3D",
