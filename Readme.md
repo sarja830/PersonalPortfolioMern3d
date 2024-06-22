@@ -24,7 +24,7 @@ https://icons8.com/profile/summary
 3. log in to droplet via ssh 
 
 ```
-ip: root@104.248.28.62'
+ssh  root@138.197.105.179            '
 password: sarthjain830
 
 ```

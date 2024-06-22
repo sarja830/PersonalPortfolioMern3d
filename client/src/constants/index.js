@@ -248,7 +248,7 @@ const experiences = [
         ],
 
         link:"https://www.rfsuny.org/",
-        Project : "Gshop",
+        Project : "Anywhere-biz",
         Date:"June 05, 2023 - Present"
     },
     {
@@ -293,11 +293,14 @@ Issued by TechBuffalo and UB Blackstone Launchpad`
         icon: paytm,
         iconBg: "white",
         date: "Jan 2021 - Aug 2022",
-        points: [
-            "Developed asynchronous APIs for event-driven microservices architecture for bulk managing of products by sellers of the ecommerce platform at Paytm. Utilized RabbitMQ, Node.js, and express.js to accomplish this milestone",
-            "Designed RESTful API wrappers for product catalog, implemented caching and pagination that reduced API response time, attaining p99 and p95 times under 90ms and 78ms respectively, down from 150ms and 120ms.",
-            "Automated CI/CD pipelines to deploy Docker images to the Kubernetes cluster through Jenkins",
-            "Engineered a scalable microservice using Spring Boot and Kafka to facilitate automated notification capabilities within Paytm Creditmate achieving a success rate of about 99.4%"
+        points:[
+            "Engineered a multi-channel notifications engine for Paytm Creditmate employing Spring Boot and Kafka with multithreading, achieving a throughput of 1000 notifications per minute",
+            "Built an end-to-end event-driven microservice architecture for file upload enabling sellers to bulk manage products reducing the processing time from 24+ hours to 5 minutes",
+            "Designed and implemented an ONDC product ingestion flow using Spring Boot and Kafka, enabling seamless integration of over 50000 products daily and driving a $5M annual revenue increase for Paytm Mall",
+            "Enhanced the performance of internal RESTful APIs for product and category catalog by implementing advanced caching and pagination strategies, achieving a 20% reduction in response time and fewer database calls",
+            "Automated CI/CD pipelines to deploy Docker images in the Kubernetes cluster using Jenkins",
+            "Led initiative to introduce a unified logging solution as a maven plugin in Java; reducing the debugging time by 33% as a part of a better engineering project resulting in the adoption by 70 repositories",
+            "Tech Stack: Spring Boot, Node.js, AWS, Jenkins, Docker, Kafka, RabbitMQ, Elasticsearch Logstash Kibana, Redis"
         ],
         link:"https://paytm.com/"
     },
@@ -418,7 +421,7 @@ const projects =[
         view_link: "https://neuralshift.tech/"
     },
     {
-        name: "Gshop - Billing Module",
+        name: "Anywhere-biz - Billing Module",
         upcoming: true,
         inprogress: true,
 
@@ -456,7 +459,7 @@ const projects =[
         // view_link: "http://ec2-3-149-230-93.us-east-2.compute.amazonaws.com/"
     },
     {
-        name: "Gshop - SaaS",
+        name: "Anywhere-biz - SaaS",
         upcoming: true,
         live: true,
         inprogress: true,
@@ -506,7 +509,7 @@ const projects =[
         ],
         image: gshop,
         // source_code_link: "",
-        view_link: "http://ec2-3-149-230-93.us-east-2.compute.amazonaws.com/"
+        view_link: "https://anywhere-biz.com/"
     },
     {
         name: "Lifetree WNY Services",
@@ -538,7 +541,7 @@ const projects =[
     {
         name: "Indian Craft Store",
 
-        live: true,
+        archived: true,
 
         description:
             [`Buyer-Seller Connection:
@@ -569,8 +572,8 @@ Keeps customers and sellers informed with email notifications triggered by signi
             },
         ],
         image: theindiancraftstore,
-        source_code_link: "https://theindiancraftstore.netlify.app/",
-        view_link:"https://theindiancraftstore.netlify.app/"
+        source_code_link: "https://github.com/sarja830/CocoBerryStore",
+        view_link:"https://github.com/sarja830/CocoBerryStore"
     },
     {
         name: "Personal Portfolio 3D",
