@@ -91,19 +91,19 @@ const resumeIframeviewLink = "https://drive.google.com/file/d/1qte9396ENtaz2Lx_0
 
 const services = [
     {
-        title: "Web Developer",
+        title: "Software Engineer",
         icon: web,
     },
     {
-        title: "Machine Learning Enthusiast",
+        title: "Backend Developer",
         icon: mobile,
     },
     {
-        title: "Backend Developer",
+        title: "Frontend Developer",
         icon: backend,
     },
     {
-        title: "Software Engineer",
+        title: "Full Stack Developer",
         icon: creator,
     },
 ];

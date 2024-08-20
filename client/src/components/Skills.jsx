@@ -65,14 +65,14 @@ const Skills = () => {
 
     return (
         <>
-            <motion.div variants={textVariant()}>
+            <div variants={textVariant()}>
                 <p className={`${styles.sectionSubText} text-center`}>
                     My current tech toolkit
                 </p>
                 <h2 className={`${styles.sectionHeadText} text-center`}>
                     Skills.
                 </h2>
-            </motion.div>
+            </div>
 
             <div className='mt-5'>
                 <h3 className='text-white font-bold text-[24px]'>Frameworks</h3>
