@@ -35,6 +35,9 @@ import postgres from "./tech/postgres.svg";
 import rabbitmq from "./tech/rabbitmq.svg";
 import springboot from "./tech/springboot.svg";
 import mongodb from "./tech/mongodb.png";
+import elasticsearch from "./tech/elasticsearch.svg";
+import azure from "./tech/azure.svg";
+import auth0 from "./tech/auth0.svg";
 
 
 
@@ -42,6 +45,7 @@ import ramaiah from "./company/ramaiah.png";
 import ub from "./company/ub.png";
 import paytm from "./company/paytm.png";
 import paytmmall from "./company/paytmmall.png";
+import trulogik from "./company/trulogik.svg";
 
 
 
@@ -66,7 +70,7 @@ import nginx from "./tech/nginnx.jpeg";
 import researchFoundation from "./researchfoundation.jpeg";
 
 export {
-  logo,aws,mysql,redis,nginx,billingmodule,comingsoon,researchFoundation,
+  logo, aws, mysql, redis, nginx, billingmodule, comingsoon, researchFoundation,
   backend,
   creator,
   mobile,
@@ -87,25 +91,26 @@ export {
   typescript,
   threejs,
   ramaiah,
-    ub,
-    springer,
-    journal,
-    paytm,
+  ub,
+  springer,
+  journal,
+  paytm,
   paytmmall,
-    kafka,
-    springboot,
-    c,
-    java,
-    python,
-    intellij,
-    vscode,
-    jenkins,
-    rabbitmq,
-    hadoop,
-    spark,
-  postgres,php,satisfly,
+  trulogik,
+  kafka,
+  springboot,
+  c,
+  java,
+  python,
+  intellij,
+  vscode,
+  jenkins,
+  rabbitmq,
+  hadoop,
+  spark,
+  postgres, php, satisfly, elasticsearch, azure, auth0,
   theindiancraftstore,
-    portfolio,
-    mapreduce,
-    corona, hollytics, mykindainsta, lifetreewny, gshop, neuralshift
+  portfolio,
+  mapreduce,
+  corona, hollytics, mykindainsta, lifetreewny, gshop, neuralshift
 };

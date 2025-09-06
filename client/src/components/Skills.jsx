@@ -6,12 +6,13 @@ import { SectionWrapper } from "../hoc";
 import { frameworks } from "../constants";
 import { languages } from "../constants";
 import { others } from "../constants";
+import { cloud } from "../constants";
 
-import {motion} from "framer-motion";
-import {textVariant} from "../utils/motion.js";
-import {styles} from "../styles.js";
+import { motion } from "framer-motion";
+import { textVariant } from "../utils/motion.js";
+import { styles } from "../styles.js";
 const Skills = () => {
-    const roles= ["author", "team Player"];
+    const roles = ["author", "team Player"];
     // const techs = [
     //     {
     //         id: 1,
@@ -107,6 +108,22 @@ const Skills = () => {
             </div>
 
 
+
+            <div className='mt-5'>
+                <h3 className='text-white font-bold text-[24px]'>Cloud</h3>
+            </div>
+            <div className="w-full grid grid-cols-2 sm:grid-cols-5 gap-8 text-center py-8 px-12 sm:px-0">
+
+                {cloud.map((cloudTech) => (
+                    <div
+
+                        className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${"shadow-cyan-500"}`}
+                    >
+                        <img src={cloudTech.icon} alt="" className="w-16 h-16 bg-white  mx-auto" />
+                        <p className="mt-1 ">{cloudTech.name}</p>
+                    </div>
+                ))}
+            </div>
 
             <div className='mt-5'>
                 <h3 className='text-white font-bold text-[24px]'>Others</h3>

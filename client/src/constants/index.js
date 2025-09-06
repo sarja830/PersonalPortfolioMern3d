@@ -15,6 +15,7 @@ import {
     ramaiah,
     ub,
     paytm, researchFoundation,
+    trulogik,
     journal,
     paytmmall,
     spark,
@@ -41,7 +42,8 @@ import {
     aws,
     mysql,
     redis,
-    nginx, billingmodule, comingsoon, neuralshift
+    nginx, billingmodule, comingsoon, neuralshift,
+    elasticsearch, azure, auth0
 } from "../assets";
 import { faJenkins } from "@fortawesome/free-brands-svg-icons";
 
@@ -144,12 +146,18 @@ const languages = [
 
 ];
 
-const others = [
+const cloud = [
     {
         name: "AWS Cloud",
         icon: aws
     },
+    {
+        name: "Azure",
+        icon: azure
+    }
+];
 
+const others = [
     {
         name: "MongoDB",
         icon: mongodb,
@@ -202,6 +210,14 @@ const others = [
         name: "Nginx",
         icon: nginx
     },
+    {
+        name: "Elasticsearch",
+        icon: elasticsearch
+    },
+    {
+        name: "Auth0 by Okta",
+        icon: auth0
+    }
 
 
 ];
@@ -233,20 +249,47 @@ const frameworks = [
 const githubLink = "https://github.com/sarja830";
 const experiences = [
     {
+        title: "Trulogik",
+        company_name: "Senior Software Engineer",
+        icon: trulogik,
+        iconBg: "white",
+        date: "August 2024 - Present",
+        points: [
+            "Leading a team of 6 engineers in developing Rx Auditor, a pharmacy claims auditing platform, projected to deliver nearly $15M in annual cost savings",
+            "Designed optimized database schemas for the QCM product using advanced normalization techniques and indexing strategies, enhancing query efficiency and reducing response times for complex analytical queries",
+            "Engineered a robust multithreaded claim ingestion pipeline using Java with concurrent processing capabilities, accelerating processing speed by 90% and handling high-volume data streams reliably",
+            "Developed a comprehensive state-driven workflow system for claims processing with integrated RBAC enforcement, enabling granular access permissions and automated status transitions, decreasing resolution time by 60%",
+            "Delivered a scalable system for claim assignment, expediting processing by 40% and improving supervisors efficiency by 35%, with a modular design for flexible strategy integration"
+        ],
+        link: "https://trulogik.com/"
+    },
+    {
+        title: "Lifetree WNY",
+        company_name: "Software Engineer Intern (Master's Project)",
+        icon: lifetreewny,
+        iconBg: "white",
+        date: "February 2023 - May 2023",
+        points: [
+            "Collaborated with a local entrepreneur to create a web app aimed at streamlining operational efficiency, leading to a 113% surge in traffic growth and a 27% boost in sales",
+            "Optimized financial record keeping efficiency by automating 99% of manual tasks through seamless integration of invoices with QuickBooks in XML format using SOAP server",
+            "Incorporated maps to strategize the most optimal execution of jobs, enhancing the efficacy of the entire system thereby reducing cost of operations by 30%"
+        ],
+        link: "https://www.lifetreewny.com/"
+    },
+    {
         title: "Research Foundation, SUNY",
         company_name: "Software Engineer",
         icon: researchFoundation,
         iconBg: "white",
-        date: "June 2022 - Present",
+        date: "June 2023 - August 2024",
         points: [
             "Built a multi-tenant SaaS platform utilizing Node.js, React, Redux, PostgreSQL, and Redis cache featuring price negotiations helping service-based businesses easily transition their ventures online",
             "Integrated order tracking, proposal management, and efficient communication channels within individual instances",
             "Enforced authentication and role-based authorization to bolster platform security using JWT tokens",
             "Onboarded microservices on CI/CD pipeline using Github Actions, boosting efficiency by 84%",
             "Dockerized Applications to deploy using Kubernetes architecture",
-            "Spearheaded the development of a centralized billing module for metering businesses and managing them on the platform bringing about a significant 80% decrease in manual workload",
+            "Spearheaded the development of a centralized billing module for metering businesses and managing them on the platform bringing about a significant 80% decrease in manual workload"
         ],
-
         link: "https://www.rfsuny.org/",
         Project: "Anywhere-biz",
         Date: "June 05, 2023 - Present"
@@ -275,9 +318,9 @@ const experiences = [
         // ],
         icon: ub,
         iconBg: "white",
-        date: "August 2022 - Dec 2023",
+        date: "August 2022 - February 2024",
         points: [
-            `CGPA: 3.8/4.0`,
+            `CGPA: 3.79/4.0`,
             `Winner of M&T Winter Coding Challenge 2024`,
             `2nd place winner in Innovate Our Ecosystem Hackathon2nd place winner in Innovate Our Ecosystem Hackathon
 Issued by TechBuffalo and UB Blackstone Launchpad`
@@ -292,15 +335,12 @@ Issued by TechBuffalo and UB Blackstone Launchpad`
         company_name: "Software Engineer",
         icon: paytm,
         iconBg: "white",
-        date: "Jan 2021 - Aug 2022",
+        date: "January 2021 - July 2022",
         points: [
-            "Engineered a multi-channel notifications engine for Paytm Creditmate employing Spring Boot and Kafka with multithreading, achieving a throughput of 1000 notifications per minute",
-            "Built an end-to-end event-driven microservice architecture for file upload enabling sellers to bulk manage products reducing the processing time from 24+ hours to 5 minutes",
+            "Engineered a multi-channel notifications engine for Paytm Creditmate employing Spring Boot and Kafka with multithreading, achieving a throughput of 4000 notifications per sec",
+            "Built an end-to-end event-driven microservice architecture for file upload, enabling sellers to bulk manage products, reducing the processing time from 24+ hours to 5 minutes",
             "Designed and implemented an ONDC product ingestion flow using Spring Boot and Kafka, enabling seamless integration of over 50000 products daily and driving a $5M annual revenue increase for Paytm Mall",
-            "Enhanced the performance of internal RESTful APIs for product and category catalog by implementing advanced caching and pagination strategies, achieving a 20% reduction in response time and fewer database calls",
-            "Automated CI/CD pipelines to deploy Docker images in the Kubernetes cluster using Jenkins",
-            "Led initiative to introduce a unified logging solution as a maven plugin in Java; reducing the debugging time by 33% as a part of a better engineering project resulting in the adoption by 70 repositories",
-            "Tech Stack: Spring Boot, Node.js, AWS, Jenkins, Docker, Kafka, RabbitMQ, Elasticsearch Logstash Kibana, Redis"
+            "Enhanced the performance of internal RESTful APIs for product and category catalog by implementing advanced caching and pagination strategies, achieving a 20% reduction in response time and fewer database calls"
         ],
         link: "https://paytm.com/"
     },
@@ -622,7 +662,7 @@ Appeals to a broad audience, whether interested in web development, 3D design, o
         ],
         image: portfolio,
         // source_code_link: "https://github.com/",
-        view_link: "https://sarthakjain.me/"
+        view_link: "https://sarja830.github.io/portfolio/"
     },
     {
         name: "Scalable Word Counting ",
@@ -856,4 +896,4 @@ const contactViaEmail = 'mailto:sarth830@gmail.com'
 const mediumBlog = "https://medium.com/@sarthjain830/different-views-of-a-binary-tree-left-view-and-right-view-of-a-binary-tree-with-breadth-first-de4b5675bd69"
 
 
-export { name, services, awards, mediumBlog, githubLink, contactViaEmail, frameworks, leetcodeProfile, others, languages, experiences, testimonials, journals, qualities, projects, resumeIframeviewLink, resumeDownloadLink };
+export { name, services, awards, mediumBlog, githubLink, contactViaEmail, frameworks, leetcodeProfile, others, cloud, languages, experiences, testimonials, journals, qualities, projects, resumeIframeviewLink, resumeDownloadLink };
