@@ -12,6 +12,7 @@ import Research from './Research.jsx';
 import Skills from './Skills.jsx';
 import Awards from './Awards.jsx';
 import Footer from './Footer.jsx';
+import Certifications from './Certifications.jsx';
 
 
 
@@ -30,5 +31,6 @@ export {
   Footer,
   Skills,
   Resume,
+  Certifications,
 
 }

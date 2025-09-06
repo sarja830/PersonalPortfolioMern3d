@@ -68,6 +68,10 @@ export const navLinks = [
         id: "research",
         title: "Research",
     },
+    {
+        id: "certifications",
+        title: "Certifications",
+    },
     // {
     //     id: "awards",
     //     title: "Awards",
@@ -866,6 +870,33 @@ Provides a friendly interface for easy profile creation, post sharing, and inter
 const awards = [
 
 ];
+
+const certifications = [
+    {
+        title: "Microservice Architectures",
+        issuer: "Vanderbilt University",
+        platform: "Coursera",
+        credentialUrl: "https://www.coursera.org/account/accomplishments/verify/NDJ2TH6P28LK"
+    },
+    {
+        title: "Building HTTP APIs with Spring",
+        issuer: "Vanderbilt University",
+        platform: "Coursera",
+        credentialUrl: "https://www.coursera.org/account/accomplishments/verify/UYSBLL7MJK4K"
+    },
+    {
+        title: "Design Patterns",
+        issuer: "University of Alberta",
+        platform: "Coursera",
+        credentialUrl: "https://www.coursera.org/account/accomplishments/verify/C97CMHMQPBLP"
+    },
+    {
+        title: "Certified Scrum Product Owner",
+        issuer: "Scrum Alliance",
+        platform: "Scrum Alliance",
+        credentialUrl: "https://badgecert.com/bc/html/groupbadges.html?k=YVg0SmFsWlVBK0hjUFA1cGl4KzlKams0cTkybW0yb2Q"
+    }
+];
 const journals = [{
     name: "Assessment and Prediction of PM2.5 in Delhi in View of Stubble Burn from Border States Using Collaborative Learning Model",
     description:
@@ -896,4 +927,4 @@ const contactViaEmail = 'mailto:sarth830@gmail.com'
 const mediumBlog = "https://medium.com/@sarthjain830/different-views-of-a-binary-tree-left-view-and-right-view-of-a-binary-tree-with-breadth-first-de4b5675bd69"
 
 
-export { name, services, awards, mediumBlog, githubLink, contactViaEmail, frameworks, leetcodeProfile, others, cloud, languages, experiences, testimonials, journals, qualities, projects, resumeIframeviewLink, resumeDownloadLink };
+export { name, services, awards, mediumBlog, githubLink, contactViaEmail, frameworks, leetcodeProfile, others, cloud, languages, experiences, testimonials, journals, qualities, projects, resumeIframeviewLink, resumeDownloadLink, certifications };
