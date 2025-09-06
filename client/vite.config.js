@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/PersonalPortfolioMern3d/', // Replace with your GitHub repository name
+  base: '/portfolio/', // Repository name
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
