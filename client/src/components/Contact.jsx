@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-import {sendMail } from './apiCall';
+import { contactViaEmail } from "../constants";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -10,12 +10,16 @@ import { slideIn } from "../utils/motion";
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
-    name: "",
-    email: "",
+    from_name: "",
+    from_email: "",
     message: "",
   });
 
   const [loading, setLoading] = useState(false);
+
+  // Contact information
+  const linkedInUrl = "https://www.linkedin.com/in/sarth830/";
+  const emailAddress = "sarth830@gmail.com";
 
   const handleChange = (e) => {
     const { target } = e;
@@ -26,33 +30,9 @@ const Contact = () => {
       [name]: value,
     });
   };
-  const sendEmail = e => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    setLoading(true);
-    // update with ? you should send category name otherwise what to update?
-    const emailTemplate = {
-          from_name: form.name,
-          from_email: form.email,
-          message: form.message,
-        };
-    sendMail(emailTemplate).then(
-        () =>
-        {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-          alert("Ahh, something went wrong. Please try again.");
-        }
-    );
+    alert(`📧 Contact form is temporarily offline. Please reach out to me via:\n\n💼 LinkedIn: ${linkedInUrl}\n✉️ Email: ${emailAddress}\n\nThank you for your understanding!`);
   };
 
 
@@ -68,6 +48,15 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
+        <div className='bg-yellow-900/20 border border-yellow-500/50 rounded-lg p-4 mb-6'>
+          <p className='text-yellow-300 text-sm'>
+            📧 <strong>Contact form is temporarily offline</strong><br />
+            Please reach out to me via:<br />
+            💼 LinkedIn: <a href={linkedInUrl} target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 underline">{linkedInUrl}</a><br />
+            ✉️ Email: <a href={`mailto:${emailAddress}`} className="text-white hover:text-blue-400 underline">{emailAddress}</a>
+          </p>
+        </div>
+
         <form
           ref={formRef}
           onSubmit={sendEmail}
@@ -77,8 +66,8 @@ const Contact = () => {
             <span className='text-white font-medium mb-4'>Your Name</span>
             <input
               type='text'
-              name='name'
-              value={form.name}
+              name='from_name'
+              value={form.from_name}
               onChange={handleChange}
               placeholder="What's your good name?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
@@ -88,8 +77,8 @@ const Contact = () => {
             <span className='text-white font-medium mb-4'>Your email</span>
             <input
               type='email'
-              name='email'
-              value={form.email}
+              name='from_email'
+              value={form.from_email}
               onChange={handleChange}
               placeholder="What's your web address?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'

@@ -14,7 +14,7 @@ import {
     docker,
     ramaiah,
     ub,
-    paytm,researchFoundation,
+    paytm, researchFoundation,
     journal,
     paytmmall,
     spark,
@@ -43,7 +43,7 @@ import {
     redis,
     nginx, billingmodule, comingsoon, neuralshift
 } from "../assets";
-import {faJenkins} from "@fortawesome/free-brands-svg-icons";
+import { faJenkins } from "@fortawesome/free-brands-svg-icons";
 
 export const navLinks = [
     {
@@ -222,7 +222,7 @@ const frameworks = [
     {
         name: "Apache Spark",
         icon: spark,
-    },{
+    }, {
         name: "Apache Hadoop",
         icon: hadoop,
     },
@@ -230,10 +230,10 @@ const frameworks = [
 
 ];
 
-const githubLink ="https://github.com/sarja830";
+const githubLink = "https://github.com/sarja830";
 const experiences = [
     {
-        title:"Research Foundation, SUNY",
+        title: "Research Foundation, SUNY",
         company_name: "Software Engineer",
         icon: researchFoundation,
         iconBg: "white",
@@ -247,9 +247,9 @@ const experiences = [
             "Spearheaded the development of a centralized billing module for metering businesses and managing them on the platform bringing about a significant 80% decrease in manual workload",
         ],
 
-        link:"https://www.rfsuny.org/",
-        Project : "Anywhere-biz",
-        Date:"June 05, 2023 - Present"
+        link: "https://www.rfsuny.org/",
+        Project: "Anywhere-biz",
+        Date: "June 05, 2023 - Present"
     },
     {
         title: "University at Buffalo, SUNY",
@@ -282,9 +282,9 @@ const experiences = [
             `2nd place winner in Innovate Our Ecosystem Hackathon2nd place winner in Innovate Our Ecosystem Hackathon
 Issued by TechBuffalo and UB Blackstone Launchpad`
         ],
-        viewTranscript:"https://drive.google.com/file/d/1A-b2aBjl7FKhF8nGudHTy2wOIq_Q7M90/view?usp=sharing",
-        transcriptLink:"https://drive.google.com/uc?export=download&id=1A-b2aBjl7FKhF8nGudHTy2wOIq_Q7M90",
-        link:"https://www.buffalo.edu/"
+        viewTranscript: "https://drive.google.com/file/d/1A-b2aBjl7FKhF8nGudHTy2wOIq_Q7M90/view?usp=sharing",
+        transcriptLink: "https://drive.google.com/uc?export=download&id=1A-b2aBjl7FKhF8nGudHTy2wOIq_Q7M90",
+        link: "https://www.buffalo.edu/"
     },
 
     {
@@ -293,7 +293,7 @@ Issued by TechBuffalo and UB Blackstone Launchpad`
         icon: paytm,
         iconBg: "white",
         date: "Jan 2021 - Aug 2022",
-        points:[
+        points: [
             "Engineered a multi-channel notifications engine for Paytm Creditmate employing Spring Boot and Kafka with multithreading, achieving a throughput of 1000 notifications per minute",
             "Built an end-to-end event-driven microservice architecture for file upload enabling sellers to bulk manage products reducing the processing time from 24+ hours to 5 minutes",
             "Designed and implemented an ONDC product ingestion flow using Spring Boot and Kafka, enabling seamless integration of over 50000 products daily and driving a $5M annual revenue increase for Paytm Mall",
@@ -302,7 +302,7 @@ Issued by TechBuffalo and UB Blackstone Launchpad`
             "Led initiative to introduce a unified logging solution as a maven plugin in Java; reducing the debugging time by 33% as a part of a better engineering project resulting in the adoption by 70 repositories",
             "Tech Stack: Spring Boot, Node.js, AWS, Jenkins, Docker, Kafka, RabbitMQ, Elasticsearch Logstash Kibana, Redis"
         ],
-        link:"https://paytm.com/"
+        link: "https://paytm.com/"
     },
     // {
     //     title: "Paytm Mall",
@@ -326,9 +326,9 @@ Issued by TechBuffalo and UB Blackstone Launchpad`
             `CGPA: 8.7/10.0`,
             `Awarded an undergraduate academic merit-based scholarship by the Government of Madhya Pradesh, highlighting my exceptional academic achievements and dedication to pursuing higher education`
         ],
-        viewTranscript:"https://drive.google.com/file/d/1xkT4siExyJVE5oMJVn7fCq_xq7EByu3T/view?usp=sharing",
+        viewTranscript: "https://drive.google.com/file/d/1xkT4siExyJVE5oMJVn7fCq_xq7EByu3T/view?usp=sharing",
         transcriptLink: "https://drive.google.com/uc?export=download&id=1xkT4siExyJVE5oMJVn7fCq_xq7EByu3T",
-        link:"https://www.msrit.edu/"
+        link: "https://www.msrit.edu/"
     }
 ];
 
@@ -365,21 +365,23 @@ const name = {
 
 }
 const qualities =
-    ["Avid Learner","Curious","Enthusiastic","Hardworking"]
-const projects =[
+    ["Avid Learner", "Curious", "Enthusiastic", "Hardworking"]
+const projects = [
     {
         name: "Neural Shift",
         // upcoming: true,
         // inprogress: true,
-        live: true,
-        description:  [
+        live: false,
+        videoDemo: true,
+        description: [
             "An innovative blogging platform: a secure, solution designed cater to bloggers of all interests and expertise levels.Engage in lively discussions with interactive comment threads, replies, and voting functionalities, fostering a dynamic blogging community.",
             "Versatile blog application supporting a wide range of categories",
             "Implemented Spring Security with OAuth 2 for secure authentication and authorization with scopes and roles",
             "Operates as a multi-tenant platform, facilitating blogging across various domains",
             "Features interactive discussions with comment, reply, and voting capabilities",
             "Utilizes ElasticSearch for fast and efficient search functionality",
-            "Employs MongoDB for effective data storage and management, and PostgreSQL for user and blog management"
+            "Employs MongoDB for effective data storage and management, and PostgreSQL for user and blog management",
+            "📺 Live site temporarily offline due to cloud credits - Watch the demo video to see the platform in action!"
         ],
         tags: [
             {
@@ -418,14 +420,14 @@ const projects =[
         // image: n,
         image: neuralshift,
         // source_code_link: "",
-        view_link: "https://neuralshift.tech/"
+        view_link: "https://www.youtube.com/watch?v=zfBMWLddNDg"
     },
     {
         name: "Anywhere-biz - Billing Module",
         upcoming: true,
         inprogress: true,
 
-        description:  [
+        description: [
             `A comprehensive solution integrating automated billing, detailed business metrics visualization,serving as centralized control panel for managing businesses on the platform, and robust OAuth 2.0 security measures for seamless platform management.`,
             "Automated Cron Job: A scheduled task that retrieves metrics from the Redis server and updates them to the relational database daily.",
             "Material UI Dashboard: A user-friendly interface presenting comprehensive metrics for each business.",
@@ -518,7 +520,7 @@ const projects =[
 
         description: [`Efficient Operations: Developed a web app to streamline daily business tasks and improve operational efficiency.`,
             ` Customer Management: Implemented a system to track proposals and manage potential customers, enhancing customer relationship management.`,
-            `QuickBooks Integration: Enabled seamless invoicing by integrating with QuickBooks, optimizing financial management.` ,
+            `QuickBooks Integration: Enabled seamless invoicing by integrating with QuickBooks, optimizing financial management.`,
             `Geolocation for Crew: Integrated map coordinates to display job locations, boosting crew efficiency by enabling them to tackle nearby tasks effectively.`],
         tags: [
             {
@@ -536,7 +538,7 @@ const projects =[
         ],
         image: lifetreewny,
         // source_code_link: "",
-        view_link:"https://www.lifetreewny.com/"
+        view_link: "https://www.lifetreewny.com/"
     },
     {
         name: "Indian Craft Store",
@@ -573,7 +575,7 @@ Keeps customers and sellers informed with email notifications triggered by signi
         ],
         image: theindiancraftstore,
         source_code_link: "https://github.com/sarja830/CocoBerryStore",
-        view_link:"https://theindiancraftstore.netlify.app/"
+        view_link: "https://theindiancraftstore.netlify.app/"
     },
     {
         name: "Personal Portfolio 3D",
@@ -581,7 +583,7 @@ Keeps customers and sellers informed with email notifications triggered by signi
         live: true,
 
         description:
-            [   `Tailored Showcase:
+            [`Tailored Showcase:
 
 Offers a curated selection of your finest work and accomplishments.`,
                 `MERN Stack Foundation:
@@ -620,7 +622,7 @@ Appeals to a broad audience, whether interested in web development, 3D design, o
         ],
         image: portfolio,
         // source_code_link: "https://github.com/",
-        view_link:"https://sarthakjain.me/"
+        view_link: "https://sarthakjain.me/"
     },
     {
         name: "Scalable Word Counting ",
@@ -652,7 +654,7 @@ Utilizes Hadoop to analyze extensive text datasets.`,
         ],
         image: mapreduce,
         source_code_link: "https://github.com/sarja830/MapReduceWordCount",
-        view_link:"https://github.com/sarja830/MapReduceWordCount"
+        view_link: "https://github.com/sarja830/MapReduceWordCount"
     },
     {
         name: "Hollytics",
@@ -662,13 +664,13 @@ Utilizes Hadoop to analyze extensive text datasets.`,
                 `Hollywood Data Analysis Tool:
 
 Developed to analyze Hollywood data and extract meaningful insights about current industry trends.`
-                ,`Web-Based Platform:
+                , `Web-Based Platform:
 
 The project takes the form of a web-based platform for easy accessibility and interaction.`
-                ,`IMDb Dataset Integration:
+                , `IMDb Dataset Integration:
 
 Utilizes an automated Python script to load data from the IMDb dataset into a PostgreSQL database.`
-                ,`Sophisticated SQL Queries:
+                , `Sophisticated SQL Queries:
 
 Leverages complex SQL queries to derive accurate and insightful information from the data.`
 
@@ -691,7 +693,7 @@ Leverages complex SQL queries to derive accurate and insightful information from
         ],
         image: hollytics,
         source_code_link: "https://github.com/sarja830/Hollytics",
-        view_link:"https://github.com/sarja830/Hollytics"
+        view_link: "https://github.com/sarja830/Hollytics"
     },
     {
         name: "Satisfly",
@@ -736,7 +738,7 @@ Leverages complex SQL queries to derive accurate and insightful information from
         ],
         image: satisfly,
         source_code_link: "https://github.com/sarja830/SatisFly-Analyzing-Air-Travel-Bliss",
-        view_link:"https://github.com/sarja830/SatisFly-Analyzing-Air-Travel-Bliss",
+        view_link: "https://github.com/sarja830/SatisFly-Analyzing-Air-Travel-Bliss",
     },
     {
         name: "COVID combat",
@@ -746,7 +748,7 @@ Leverages complex SQL queries to derive accurate and insightful information from
                 `COVID-19 Reporting Platform:
 
 Developed to aid in pandemic control by allowing users to report COVID-19 positive suspects in their vicinity`
-                ,`User-Generated Suspect Reports:
+                , `User-Generated Suspect Reports:
 Enables users to easily report potential COVID-19 cases, contributing to a collective effort for virus containment.`,
                 `District-Wise Data Aggregation:
 
@@ -771,14 +773,14 @@ Aims to identify potential COVID-19 cases promptly, supporting early detection s
             {
                 name: "Mysql",
                 color: "orange-text-gradient",
-            },{
+            }, {
                 name: "Java",
                 color: "sky-text-gradient",
             },
         ],
         image: corona,
         source_code_link: "https://github.com/sarja830/COVID-combat",
-        view_link:"https://github.com/sarja830/COVID-combat"
+        view_link: "https://github.com/sarja830/COVID-combat"
     },
     {
         name: "Mykindainsta",
@@ -788,13 +790,13 @@ Aims to identify potential COVID-19 cases promptly, supporting early detection s
                 `MERN Stack Social Platform:
 
 Developed using the MERN stack for a comprehensive social media experience.`
-                ,`Personalized Connection:
+                , `Personalized Connection:
 
 Offers users tailored connections and sharing based on individual interests.`
-                ,`Data Security with Encryption:
+                , `Data Security with Encryption:
 
 Prioritizes security by using SHA-256 encryption to protect sensitive user data, including passwords.`
-                ,`User-Friendly Interaction:
+                , `User-Friendly Interaction:
 
 Provides a friendly interface for easy profile creation, post sharing, and interaction with others.`
             ],
@@ -811,26 +813,27 @@ Provides a friendly interface for easy profile creation, post sharing, and inter
                 name: "Node.Js",
                 color: "blue-text-gradient",
             },
-            {   name: "Mongodb",
+            {
+                name: "Mongodb",
                 color: "orange-text-gradient",
             },
         ],
         image: mykindainsta,
         source_code_link: "https://github.com/sarja830/Mykindainsta/",
-        view_link:"https://github.com/sarja830/Mykindainsta/"
+        view_link: "https://github.com/sarja830/Mykindainsta/"
     },
 ];
 const awards = [
 
 ];
-const journals =[{
+const journals = [{
     name: "Assessment and Prediction of PM2.5 in Delhi in View of Stubble Burn from Border States Using Collaborative Learning Model",
     description:
-        [    "A thick layer of smog blankets can be seen in Delhi," +
-        " India in November, the primary season of stubble burning. " +
-        " In this paper, the author attempts to estimate the value of PM2.5 in Delhi," +
-        " mainly due to stubble burning in neighboring states. " +
-        "Various meteorological parameters are considered like wind speed, temperature, and relative humidity. The model used here is based on collaborative learning (stacking regression) which is trained using the out-of-folds predictions based on the complete training set, later the meta-regression is trained based on the outputs of the different regression methods in the group. The presented model is validated using different machine-learning methods, statistical measures, and the real-time stubble data of Delhi. "],
+        ["A thick layer of smog blankets can be seen in Delhi," +
+            " India in November, the primary season of stubble burning. " +
+            " In this paper, the author attempts to estimate the value of PM2.5 in Delhi," +
+            " mainly due to stubble burning in neighboring states. " +
+            "Various meteorological parameters are considered like wind speed, temperature, and relative humidity. The model used here is based on collaborative learning (stacking regression) which is trained using the out-of-folds predictions based on the complete training set, later the meta-regression is trained based on the outputs of the different regression methods in the group. The presented model is validated using different machine-learning methods, statistical measures, and the real-time stubble data of Delhi. "],
     tags: [
         {
             name: "Journal",
@@ -848,9 +851,9 @@ const journals =[{
     image: journal,
     source_code_link: "https://link.springer.com/article/10.1007/s41810-020-00083-1",
 }]
-const leetcodeProfile ='https://leetcode.com/sarja830/'
-const contactViaEmail= 'mailto:sjain34@vuffalo.edu'
-const mediumBlog= "https://medium.com/@sarthjain830/different-views-of-a-binary-tree-left-view-and-right-view-of-a-binary-tree-with-breadth-first-de4b5675bd69"
+const leetcodeProfile = 'https://leetcode.com/sarja830/'
+const contactViaEmail = 'mailto:sarth830@gmail.com'
+const mediumBlog = "https://medium.com/@sarthjain830/different-views-of-a-binary-tree-left-view-and-right-view-of-a-binary-tree-with-breadth-first-de4b5675bd69"
 
 
-export { name ,services, awards, mediumBlog, githubLink, contactViaEmail, frameworks, leetcodeProfile, others,languages, experiences, testimonials,journals,qualities, projects, resumeIframeviewLink, resumeDownloadLink };
+export { name, services, awards, mediumBlog, githubLink, contactViaEmail, frameworks, leetcodeProfile, others, languages, experiences, testimonials, journals, qualities, projects, resumeIframeviewLink, resumeDownloadLink };

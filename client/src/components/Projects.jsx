@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
@@ -9,16 +9,16 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
-                         index,
-                         name,
-                         upcoming,live,inprogress,archived,
-                         description,
-                         tags,
-                         image,
-                         source_code_link,
-                         view_link
-                     }) => {
-    const [showMore,setShowMore] = useState("");
+    index,
+    name,
+    upcoming, live, inprogress, archived, videoDemo,
+    description,
+    tags,
+    image,
+    source_code_link,
+    view_link
+}) => {
+    const [showMore, setShowMore] = useState("");
 
     return (
         <div
@@ -35,7 +35,7 @@ const ProjectCard = ({
                 <div className='relative w-full h-[230px]'>
                     <div
                         onClick={() => {
-                            if(view_link!==undefined)
+                            if (view_link !== undefined)
                                 window.open(view_link, "_blank")
                         }}
                         className='w-full h-full object-cover  cursor-pointer rounded-2xl'
@@ -62,7 +62,7 @@ const ProjectCard = ({
                                         alt='source code'
                                         className='w-1/2 h-1/2 object-contain'
                                     />
-                                </div> ): null
+                                </div>) : null
                             }
                         </div>
 
@@ -71,19 +71,22 @@ const ProjectCard = ({
 
                 {/*for name and desdcriptions*/}
                 <div className='mt-5'>
-                    <h3 className='text-white font-bold text-[24px]'>{name} <br/>
+                    <h3 className='text-white font-bold text-[24px]'>{name} <br />
                         <div className='inline-block'>
-                            { inprogress!=undefined && inprogress? <span className="bg-orange-500 text-black-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-orange-400">In progress</span>:null}
-                            { archived!=undefined && archived? <span className="bg-red-500 text-black-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-red-400">archived</span>:null}
-                            { upcoming!=undefined && upcoming? <span
-                                className="bg-blue-400 text-white-900 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-100 dark:text-orange-300 border border-blue-600">Coming soon</span>:null}
-                            { live!=undefined && live?
+                            {inprogress != undefined && inprogress ? <span className="bg-orange-500 text-black-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-orange-400">In progress</span> : null}
+                            {archived != undefined && archived ? <span className="bg-red-500 text-black-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-red-400">archived</span> : null}
+                            {upcoming != undefined && upcoming ? <span
+                                className="bg-blue-400 text-white-900 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-100 dark:text-orange-300 border border-blue-600">Coming soon</span> : null}
+                            {live != undefined && live ?
                                 <span className="bg-green-500 text-black-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400">Live</span>
-                                :null}
+                                : null}
+                            {videoDemo != undefined && videoDemo ?
+                                <span className="bg-purple-500 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-purple-400 border border-purple-400">Video Demo</span>
+                                : null}
                         </div>
                     </h3>
                     {/*<p className='mt-2 text-secondary text-[14px] '>{showMore?description:description.split(".")[0]}*/}
-                    <p className='mt-2 text-secondary text-[14px] '>{showMore?
+                    <p className='mt-2 text-secondary text-[14px] '>{showMore ?
                         (<ul className='mt-5 list-disc ml-5 space-y-2'>
                             {description.map((point, index) => (
                                 <li
@@ -94,14 +97,14 @@ const ProjectCard = ({
                                 </li>
                             ))}
                         </ul>)
-                        :description[0]}
+                        : description[0]}
 
-                        <br/>
-                        <br/>
-                        <span className="hover:cursor-pointer border-solid border-2 border-white-600 ml-2 p-1" onClick={()=>(setShowMore((prevState)=>(!prevState)))
+                        <br />
+                        <br />
+                        <span className="hover:cursor-pointer border-solid border-2 border-white-600 ml-2 p-1" onClick={() => (setShowMore((prevState) => (!prevState)))
                         }>
-                        {showMore?'less ':'more '}
-                    </span>
+                            {showMore ? 'less ' : 'more '}
+                        </span>
 
                     </p>
                 </div>
