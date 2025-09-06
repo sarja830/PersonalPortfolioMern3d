@@ -420,6 +420,7 @@ const projects = [
         // image: n,
         image: neuralshift,
 
+ub
         // source_code_link: "",
         view_link: "https://www.youtube.com/watch?v=zfBMWLddNDg"
     },
