@@ -6,7 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="989a0326-62cd-4635-8d9b-481c119c529b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/constants/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/node_modules/.vite/deps/@react-three_drei.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/node_modules/.vite/deps/@react-three_drei.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/node_modules/.vite/deps/@react-three_fiber.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/node_modules/.vite/deps/@react-three_fiber.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/node_modules/.vite/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/node_modules/.vite/deps/chunk-AQQVCCRG.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/node_modules/.vite/deps/chunk-AQQVCCRG.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/node_modules/.vite/deps/chunk-NALVAE3D.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/node_modules/.vite/deps/chunk-NALVAE3D.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/node_modules/.vite/deps/maath_random_dist_maath-random__esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/node_modules/.vite/deps/maath_random_dist_maath-random__esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/node_modules/.vite/deps/react_jsx-runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/node_modules/.vite/deps/react_jsx-runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/node_modules/.vite/deps/react_jsx-runtime.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/client/node_modules/.vite/deps/react_jsx-runtime.js.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,15 +28,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "sarja830"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sarja830&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "git@github.com:sarja830/PersonalPortfolioMern3d.git",
+    "url": "git@github.com:sarja830/portfolio.git",
     "accountId": "0c892fdf-9e92-4e24-b707-2c996124e895"
   }
 }]]></component>
@@ -46,26 +55,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "TODO_SCOPE": "All Places",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "githubPages",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/sarthakjain/Documents/GitHub/PersonalPortfolioMern3d/client/src/assets",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;githubPages&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sarthakjain/Documents/GitHub/PersonalPortfolioMern3d/client/src/assets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/src/assets" />
