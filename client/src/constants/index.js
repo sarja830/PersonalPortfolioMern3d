@@ -144,12 +144,14 @@ const languages = [
 
 ];
 
-const others = [
+const cloud = [
     {
         name: "AWS Cloud",
         icon: aws
     },
+];
 
+const others = [
     {
         name: "MongoDB",
         icon: mongodb,
@@ -875,4 +877,4 @@ const contactViaEmail = 'mailto:sarth830@gmail.com'
 const mediumBlog = "https://medium.com/@sarthjain830/different-views-of-a-binary-tree-left-view-and-right-view-of-a-binary-tree-with-breadth-first-de4b5675bd69"
 
 
-export { name, services, awards, mediumBlog, githubLink, contactViaEmail, frameworks, leetcodeProfile, others, languages, experiences, testimonials, journals, qualities, projects, resumeIframeviewLink, resumeDownloadLink };
+export { name, services, awards, mediumBlog, githubLink, contactViaEmail, frameworks, leetcodeProfile, others, cloud, languages, experiences, testimonials, journals, qualities, projects, resumeIframeviewLink, resumeDownloadLink };
