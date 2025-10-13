@@ -259,11 +259,11 @@ const experiences = [
         iconBg: "white",
         date: "August 2024 - Present",
         points: [
-            "Led a team of 6 engineers to develop Rx Inspector, a GenAI-powered pharmacy claims auditing platform projected to deliver $15M+ annual cost savings",
-            "Designed and delivered a cloud-native architecture for the Rx Inspector product, integrating Azure Blob Storage with presigned URLs for secure large file ingestion, reducing server load by 80% through direct cloud uploads",
-            "Implemented an event-driven microservices architecture for processing audit files using Kafka with dead-letter queue patterns, achieving zero data loss and automated error recovery",
-            "Designed and optimized database schemas for Quick Claims Manager using normalization and strategic indexing, reducing query response times by 40% and improving query performance by 60% for complex multi-table joins",
-            "Engineered a robust multithreaded claim ingestion pipeline using Java with concurrent processing capabilities, accelerating processing speed by 90% and handling high-volume data streams reliably",
+            "Engineered an event-driven microservices architecture for audit automation using GenAI— handling ingestion, auditing, and lifecycle transitions projected to deliver $15M+ annual cost savings",
+            "Engineered secure file upload solution using Azure Blob Storage SAS tokens with cryptographic ETag validation and event-driven callback confirmation, bypassing backend file handling",
+            "Architected high-performance Data Feeder Service for Excel-based claim ingestion, implementing duplicate detection, transactional integrity, and parallel batch processing to achieve throughput of 12K+ records/minute",
+            "Designed and optimized database schemas for Quick Claims Manager using normalization and strategic indexing, improving query performance and enabling efficient multi-table join operations",
+            "Implemented Azure AD OAuth 2.0 authentication architecture by creating frontend and backend app registrations with custom API scopes and cross-app permissions, enabling secure role-based access control across microservices",
             "Developed a comprehensive state-driven workflow system for claims processing with integrated RBAC enforcement, enabling granular access permissions and automated status transitions, decreasing resolution time by 2 days",
             "Delivered a scalable system for claim assignment, expediting processing by 40% and improving supervisors efficiency by 35%, with a modular design for flexible strategy integration"
         ],
